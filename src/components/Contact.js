@@ -4,6 +4,7 @@ import { useForm } from 'react-hook-form'
 import PhoneAndroidIcon from '@material-ui/icons/PhoneAndroid';
 import DraftsIcon from '@material-ui/icons/Drafts';
 import Button from '@material-ui/core/Button';
+import ContactsIcon from '@material-ui/icons/Contacts';
 import * as emailjs from 'emailjs-com'
 
 function Contact() {
@@ -122,7 +123,7 @@ function Contact() {
                 <div style={{ fontFamily: "Lora", borderBottom: " 2px groove white", fontSize: "20px" }}>
                     <p> <PhoneAndroidIcon color="primary" />0486 72 95 96</p>
                     <p> <DraftsIcon color="primary" /> Nguyen.Hoang0001@hotmail.com</p>
-                    <p> Or you could submit the form below directly </p>
+                    <p> <ContactsIcon color="primary"/> Or you could submit the form below directly </p>
                 </div>
                 <div className={classes.form}>
                     <label className={classes.label}> First Name :</label>
