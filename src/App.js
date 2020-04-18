@@ -1,26 +1,30 @@
 import React from 'react';
-import logo from './logo.svg';
 import './App.css';
+import Navbar from './components/Navbar'
+import Hero from './components/Hero'
+import Projects from './components/Projects/Projects'
+import Profile from './components/Profile'
+import Contact from './components/Contact'
+import scrollToComponent from 'react-scroll-to-component';
 
-function App() {
+class App extends React.Component {
+
+render (){
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <>
+      <Navbar 
+      scrollMain={() => scrollToComponent(this.Main, { offset: 0, align: 'top', duration: 500})}
+      scrollProjects={() => scrollToComponent(this.Projects, { offset: 0, align: 'top', duration: 500})}
+      scrollProfile={() => scrollToComponent(this.Profile, { offset: 0, align: 'top', duration: 500})}
+      scrollContact={() => scrollToComponent(this.Contact, { offset: 0, align: 'top', duration: 500})}
+      />
+      <section ref={(section) => { this.Main = section; }} > <Hero /></section>
+      <section ref={(section) => { this.Projects = section; }} > <Projects /></section>
+      <section ref={(section) => { this.Profile = section; }} > <Profile /></section>
+      <section ref={(section) => { this.Contact = section; }} > <Contact /></section>
+    </>
   );
+}
 }
 
 export default App;
