@@ -54,6 +54,7 @@ export default function MediaCard(props) {
           className={classes.media}
           src={props.picture}
           alt={props.title}
+          style={{borderBottom:"2px groove black"}}
         />
         <CardContent style={{cursor:"default"}}>
           <Typography >
