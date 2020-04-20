@@ -53,6 +53,9 @@ function Navbar(props) {
         title: {
             flexGrow: 1,
         },
+        important:{
+            zIndex:"5"
+        }
     }));
 
     const closeMain = () => {
@@ -75,7 +78,7 @@ function Navbar(props) {
 
     const classes = useStyles(props);
     const dropdown =
-        <div>
+        <div className={classes.important}> 
             <span style={{ color: "white" }} aria-controls="simple-menu" aria-haspopup="true" onClick={handleClick}>
                 <IconButton edge="start" className={classes.menuButton} color="inherit" aria-label="menu">
                     <MenuIcon />

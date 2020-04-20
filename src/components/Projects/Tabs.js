@@ -56,6 +56,7 @@ const useStyles = makeStyles((theme) => ({
         textAlign:"center",
         width:"50%",
         left:"25%",
+        zIndex:"1",
         position:"absolute",
         [theme.breakpoints.down('sm')]:{
             width:"100%",

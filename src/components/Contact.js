@@ -74,11 +74,9 @@ function Contact() {
         },
         form: {
             padding: "3%",
-            fontFamily: "Lora",
             textAlign: "left"
         },
         label: {
-            fontFamily: "Lora",
             fontWeight: "bold",
             fontSize: "20px",
             paddingBottom: "1%",

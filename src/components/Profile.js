@@ -36,7 +36,6 @@ function Profile() {
         profil: {
             padding: "2%",
             textAlign: "justify",
-            fontFamily: "Lora",
             fontSize: "20px"
         },
     }))
