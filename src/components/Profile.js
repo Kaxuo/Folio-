@@ -29,7 +29,7 @@ function Profile() {
             paddingBottom: "1%"
         },
         profile: {
-            backgroundColor: "#33FFBD",
+            backgroundColor: "#50617d",
             padding: "1%",
             textAlign: "left",
         },
@@ -56,7 +56,7 @@ function Profile() {
                 Unfortunately, I do not have any experience working in this field but I am really looking forward to start working on some projects. 
                 I'm fluent in french, english and vietnamiese. I can speak a little bit of dutch and japanese(however, I wouldn't mind improving my dutch if given the chance)
                 </p>
-                <div style={{ backgroundColor: "#FF5733" }} className={classes.profile}>
+                <div style={{ backgroundColor: "#50617d" }} className={classes.profile}>
                     <h3 style={{ fontWeight: "bold" }}>Education </h3>
                 </div>
                 <p className={classes.profil}>
@@ -67,7 +67,7 @@ function Profile() {
                 University of Brussel (ULB)<br />
                 2018 - 2019<br />
                 </p>
-                <div style={{ backgroundColor: "#75FF33" }} className={classes.profile}>
+                <div style={{ backgroundColor: "#50617d" }} className={classes.profile}>
                     <h3 style={{ fontWeight: "bold" }}> Skills </h3>
                 </div>
                 <div className={classes.profil}>
@@ -107,7 +107,7 @@ function Profile() {
                     </div>
                     <br />
                 </div>
-                <div style={{ backgroundColor: "#FFBD33" }} className={classes.profile}>
+                <div style={{ backgroundColor: "#50617d" }} className={classes.profile}>
                     <h3 style={{ fontWeight: "bold" }}> Languages</h3>
                 </div>
                 <Button style={{ padding: "1%", margin: "1%", cursor: "default" }} variant="contained" color="secondary">
