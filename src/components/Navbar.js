@@ -12,6 +12,7 @@ import reddrg from '../logo/reddrg.svg'
 
 
 
+
 function Navbar(props) {
     const [open, setOpen] = useState(null)
 
@@ -25,7 +26,7 @@ function Navbar(props) {
     };
     const useStyles = makeStyles((theme) => ({
         background:{
-            backgroundColor:"#162c52"
+            backgroundColor:"#1B242F"
         },
         back: {
             [theme.breakpoints.down("sm")]: {
@@ -39,6 +40,24 @@ function Navbar(props) {
         },
         menuButton: {
             marginRight: theme.spacing(2),
+        },
+        nav:{
+            // LINE BELOW TO MAKE THE UNDERLINE APPEAR 
+            '&:after':{
+                content: '""',
+                position: "absolute",
+                width: "100%",
+                height: "2px",
+                bottom: 0,
+                left: 0,
+                backgroundColor: "white",
+                transform: "scaleX(0)",
+                transition: "all 0.3s ease-in-out 0s",
+            },
+            '&:hover:after':{
+                visibility: "visible",
+                transform: "scaleX(1)",
+            },
         },
         logo: {
             position: "absolute",
@@ -108,10 +127,10 @@ function Navbar(props) {
                     </Typography>
                     <img className={classes.logo} alt='logo' src ={reddrg}/> 
                     <div className={classes.back}>
-                        <Button onClick={() => props.scrollMain()} color="inherit">Main</Button>
-                        <Button onClick={() => props.scrollProjects()} color="inherit">Projects</Button>
-                        <Button onClick={() => props.scrollProfile()}color="inherit">Profile</Button>
-                        <Button onClick={() => props.scrollContact()}color="inherit">Contact</Button>
+                        <Button className={classes.nav} onClick={() => props.scrollMain()} color="inherit">Main</Button>
+                        <Button className={classes.nav} onClick={() => props.scrollProjects()} color="inherit">Projects</Button>
+                        <Button className={classes.nav} onClick={() => props.scrollProfile()}color="inherit">Profile</Button>
+                        <Button className={classes.nav} onClick={() => props.scrollContact()}color="inherit">Contact</Button>
                     </div>
                     <div className={classes.hidden}>
                         {dropdown}

@@ -6,6 +6,7 @@ import DraftsIcon from '@material-ui/icons/Drafts';
 import Button from '@material-ui/core/Button';
 import ContactsIcon from '@material-ui/icons/Contacts';
 import * as emailjs from 'emailjs-com'
+import Fade from 'react-reveal/Fade';
 
 function Contact() {
 
@@ -54,7 +55,6 @@ function Contact() {
 
     const useStyles = makeStyles((theme) => ({
         page: {
-            background: "linear-gradient(0deg, #1CB5E0 0%, #000851 100%)",
             paddingTop: "4%",
             fontFamily: 'Arimo',
             overflow: "hidden",
@@ -63,7 +63,6 @@ function Contact() {
         container: {
             backgroundColor: "#0E1219",
             textAlign: "center",
-            borderRadius: "25px",
             width: "50%",
             height: "100%",
             marginLeft: "25%",
@@ -102,7 +101,6 @@ function Contact() {
             padding: '0 30px',
             width: "100%",
             marginTop: "3%",
-            borderRadius: "10px",
         },
         error: {
             paddingTop: "3%",
@@ -115,6 +113,7 @@ function Contact() {
     const error = state.firstName && state.lastName && state.email && state.message ? (<Button type="submit" className={classes.but}>Submit</Button>) : (<Button disabled type="submit" className={classes.but}>Submit</Button>)
 
     return (
+        <Fade left>
         <form className={classes.page} onSubmit={handleSubmit(onSubmit)}>
             <div className={classes.container}>
                 <h1 style={{ borderBottom: " 2px groove white", paddingBottom: "1%", fontFamily: 'Lobster', }}> Contact Me ! </h1>
@@ -148,6 +147,7 @@ function Contact() {
                 </div>
             </div>
         </form>
+        </Fade>
     )
 }
 
