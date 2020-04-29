@@ -19,7 +19,7 @@ const useStyles = makeStyles((theme) => ({
     border:"3px outset black",
     transition: "transform .2s",
     '&:hover':{
-      transform: "scale(1.1)",
+      transform: "scale(1.05)",
       boxShadow: "10px 10px 5px "
     },
     [theme.breakpoints.down('xs')]:{

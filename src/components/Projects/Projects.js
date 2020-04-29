@@ -8,14 +8,16 @@ function Projects() {
 
     const useStyles = makeStyles((theme) => ({
         background:{
+            backgroundColor:"#C0C0C0",
             textAlign:"center",
             height:"100%",
             width:"100%",
             overflow: "hidden",
             paddingTop:"2%",
+            paddingBottom:"5%"
         },
         title:{
-            fontSize:"80px",
+            fontSize:"65px",
             fontFamily: 'Lobster',
             paddingBottom:"1%",
             letterSpacing:'10px',
@@ -37,12 +39,12 @@ function Projects() {
 
     const classes = useStyles()
     return (
-        <Zoom>
         <div className={classes.background}>
+            <Zoom>
             <h1 className={classes.title}>Projects</h1>
             <Tabs/>
+            </Zoom>
         </div>
-        </Zoom>
     )
 }
 

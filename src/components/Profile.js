@@ -2,17 +2,20 @@ import React from 'react';
 import { makeStyles } from '@material-ui/core/styles';
 import Button from '@material-ui/core/Button';
 import ProgressBar from 'react-bootstrap/ProgressBar';
-import Fade from 'react-reveal/Fade';
+import Zoom from 'react-reveal/Zoom';
+
 
 
 function Profile() {
 
     const useStyles = makeStyles((theme) => ({
         page: {
+            backgroundColor: "#D3D3D3",
             paddingTop: "4%",
             fontFamily: 'Arimo',
             overflow: "hidden",
-            color:"white"
+            color:"white",
+            paddingBottom:"4%"
         },
         container: {
             backgroundColor: "#0E1219",
@@ -44,8 +47,8 @@ function Profile() {
     const classes = useStyles()
 
     return (
-        <Fade right>
         <div className={classes.page}>
+            <Zoom>
             <div className={classes.container}>
                 <div className={classes.title}>
                     <h3 style={{ fontWeight: "bold" }}> Nguyen Hoang</h3>
@@ -128,8 +131,8 @@ function Profile() {
                     Japanese
                     </Button>
             </div>
+            </Zoom>
         </div>
-        </Fade>
     )
 }
 
