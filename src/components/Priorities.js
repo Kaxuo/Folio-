@@ -4,8 +4,11 @@ import { GiBookCover } from "react-icons/gi"
 import { FcMultipleSmartphones } from "react-icons/fc"
 import { AiFillCodeSandboxCircle } from "react-icons/ai"
 import { FiUsers } from "react-icons/fi"
+import { BsFillPersonLinesFill } from "react-icons/bs";
 import Grid from '@material-ui/core/Grid';
 import Fade from 'react-reveal/Fade';
+import Zoom from 'react-reveal/Zoom';
+
 
 function Priorities() {
     const useStyles = makeStyles((theme) => ({
@@ -76,13 +79,24 @@ function Priorities() {
                 <Grid item xs={12} md={2} >
                     <Fade left>
                         <div className="hexagon">
+                            <p className={classes.icon}> <BsFillPersonLinesFill /></p>
+                        </div>
+                        <div className={classes.text}>
+                            <h3 style={{ color: "white", fontWeight: "bold" }}> Motivated</h3>
+                            <p style={{ color: "white" }}>Extremely motivated to work in this field, always willing to give my best to complete the tasks</p>
+                        </div>
+                    </Fade>
+                </Grid>
+                <Grid item xs={12} md={2} >
+                    <Zoom >
+                    <div className="hexagon">
                             <p className={classes.icon}> <FcMultipleSmartphones /></p>
                         </div>
                         <div className={classes.text}>
                             <h3 style={{ color: "white", fontWeight: "bold" }}> Responsive</h3>
                             <p style={{ color: "white" }}>My layouts will work on any device, big or small.</p>
                         </div>
-                    </Fade>
+                    </Zoom>
                 </Grid>
                 <Grid item xs={12} md={2} >
                     <Fade right>

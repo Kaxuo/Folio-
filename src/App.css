@@ -26,22 +26,24 @@
     width: 0;
     border-top: 28.87px solid #64C7CC;
   }
-  @media only screen and (min-width: 100px) and  (max-width: 400px) {
+
+
+  @media only screen and  (max-width: 959px) {
     .hexagon {
-      left: 30%
-    }
-  } 
-  @media only screen and (min-width: 500px) and  (max-width: 860px) {
-    .hexagon {
-      left: 45%
+      left: 45%;
     }
   } 
 
-  @media only screen and (min-width: 862px) and  (max-width: 958px) {
+  @media only screen and  (max-width: 600px) {
     .hexagon {
-      left: 45%potof
+      left: 40%;
     }
   } 
 
+  @media only screen and  (max-width: 310px) {
+    .hexagon {
+      left: 30%;
+    }
+  } 
 
 
