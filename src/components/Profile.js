@@ -57,7 +57,7 @@ function Profile() {
                 <div className={classes.profile}>
                     <h3 style={{ fontWeight: "bold" }}>Profile </h3>
                 </div>
-                <p className={classes.profil} > Hello ! Thanks for checking my resumé . <br />I'm a self-taught programmer who started coding as a hobby I studied law at the University of Mons and then Brussels but at some point, I wasn't motivated anymore and put it on hold. I started studying programming on my own since it was more appealing. I'm always motivated to learn new things so if there is a language you wish for me to learn, I won't mind doing so.<br /> I'm highly motivated to work in this field and if you will have me, I will do my best to meet your expectations.
+                <p className={classes.profil} > Hello ! Thanks for checking my resumé . <br />I'm a self-taught programmer who started coding as a hobby .<br/>I studied law at the University of Mons and then Brussels but at some point, I wasn't motivated anymore and put it on hold. I started studying programming on my own since it was more appealing. I'm always motivated to learn new things so if there is a language you wish for me to learn, I won't mind doing so.<br /> I'm highly motivated to work in this field and if you will have me, I will do my best to meet your expectations.
                 Unfortunately, I do not have any experience working in this field but I am really looking forward to start working on some projects. 
                 I'm fluent in french, english and vietnamiese. I can speak a little bit of dutch and japanese(however, I wouldn't mind improving my dutch if given the chance)
                 </p>
