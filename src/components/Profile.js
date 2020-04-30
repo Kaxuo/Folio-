@@ -10,7 +10,7 @@ function Profile() {
 
     const useStyles = makeStyles((theme) => ({
         page: {
-            backgroundColor: "#D3D3D3",
+            backgroundColor:"#F5F5F5",
             paddingTop: "4%",
             fontFamily: 'Arimo',
             overflow: "hidden",
@@ -52,7 +52,7 @@ function Profile() {
             <div className={classes.container}>
                 <div className={classes.title}>
                     <h3 style={{ fontWeight: "bold" }}> Nguyen Hoang</h3>
-                    <h4 style={{ fontFamily: 'Permanent Marker' }}> Full Stack Developper</h4>
+                    <h4 style={{ fontFamily: 'Raleway' }}> Full Stack Developper</h4>
                 </div>
                 <div className={classes.profile}>
                     <h3 style={{ fontWeight: "bold" }}>Profile </h3>
@@ -80,35 +80,35 @@ function Profile() {
                         <Button style={{ padding: "1%", margin: "1%", cursor: "default" }} variant="contained" color="primary">
                             HTML
                     </Button>
-                        <ProgressBar style={{ width: "85%", margin: "2%" }} label="Advanced" animated now={80} />
+                        <ProgressBar style={{ width: "85%", margin: "2%" }} label="Advanced"  now={80} />
                     </div>
                     <br />
                     <div style={{ display: "flex", justifyContent: "space-between" }}>
                         <Button style={{ padding: "1%", margin: "1%", cursor: "default" }} variant="contained" color="primary">
                             CSS
                     </Button>
-                        <ProgressBar style={{ width: "85%", margin: "2%" }} label="Advanced" animated now={80} />
+                        <ProgressBar style={{ width: "85%", margin: "2%" }} label="Advanced"  now={80} />
                     </div>
                     <br />
                     <div style={{ display: "flex", justifyContent: "space-between" }}>
                         <Button style={{ padding: "1%", margin: "1%", cursor: "default" }} variant="contained" color="primary">
                             React
                     </Button>
-                        <ProgressBar style={{ width: "85%", margin: "2%" }} label="Advanced" animated now={85} />
+                        <ProgressBar style={{ width: "85%", margin: "2%" }} label="Advanced"  now={85} />
                     </div>
                     <br />
                     <div style={{ display: "flex", justifyContent: "space-between" }}>
                         <Button style={{ padding: "1%", margin: "1%", cursor: "default" }} variant="contained" color="primary">
                             Python
                     </Button>
-                        <ProgressBar style={{ width: "85%", margin: "2%" }} label="Experienced" animated now={50} />
+                        <ProgressBar style={{ width: "85%", margin: "2%" }} label="Experienced"  now={50} />
                     </div>
                     <br />
                     <div style={{ display: "flex", justifyContent: "space-between" }}>
                         <Button style={{ padding: "1%", margin: "1%", cursor: "default" }} variant="contained" color="primary">
                             Django
                     </Button>
-                        <ProgressBar style={{ width: "85%", margin: "2%" }} label="Experienced" animated now={60} />
+                        <ProgressBar style={{ width: "85%", margin: "2%" }} label="Experienced"  now={60} />
                     </div>
                     <br />
                 </div>

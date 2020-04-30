@@ -30,7 +30,7 @@ function Hero(props) {
         },
         title: {
             fontSize: "100px",
-            fontFamily: 'Lobster',
+            fontFamily: 'Raleway',
             letterSpacing: '10px',
             position: "relative",
             [theme.breakpoints.down('sm')]: {
@@ -48,7 +48,7 @@ function Hero(props) {
         },
         stack: {
             paddingTop: "3%",
-            fontFamily: 'Permanent Marker',
+            fontFamily: 'Raleway',
             fontSize: "60px",
             // !!!!!!!!! You needed to use position relative to put it in front , zindex didn't work
             position: "relative",

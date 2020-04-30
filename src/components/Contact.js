@@ -55,9 +55,8 @@ function Contact() {
 
     const useStyles = makeStyles((theme) => ({
         page: {
-            backgroundColor: "#D3D3D3",
             paddingTop: "4%",
-            fontFamily: 'Arimo',
+            fontFamily: 'Raleway',
             overflow: "hidden",
             color: "white",
             paddingBottom:"5vh"
@@ -119,8 +118,8 @@ function Contact() {
         <form className={classes.page} onSubmit={handleSubmit(onSubmit)}>
             <Zoom>
                 <div className={classes.container}>
-                    <h1 style={{ borderBottom: " 2px groove white", paddingBottom: "1%", fontFamily: 'Lobster', }}> Contact Me ! </h1>
-                    <div style={{ fontFamily: "Lora", borderBottom: " 2px groove white", fontSize: "20px" }}>
+                    <h1 style={{ borderBottom: " 2px groove white", paddingBottom: "1%", fontFamily: 'Raleway', }}> Contact Me ! </h1>
+                    <div style={{ fontFamily: 'Raleway', borderBottom: " 2px groove white", fontSize: "px" }}>
                         <p> <PhoneAndroidIcon color="primary" />0486 72 95 96</p>
                         <p> <DraftsIcon color="primary" /> Nguyen.Hoang0001@hotmail.com</p>
                         <p> <ContactsIcon color="primary" /> Or you could submit the form below directly </p>

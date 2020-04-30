@@ -8,7 +8,7 @@ function Projects() {
 
     const useStyles = makeStyles((theme) => ({
         background:{
-            backgroundColor:"#C0C0C0",
+            backgroundColor:"#DCDCDC",
             textAlign:"center",
             height:"100%",
             width:"100%",
@@ -18,9 +18,9 @@ function Projects() {
         },
         title:{
             fontSize:"65px",
-            fontFamily: 'Lobster',
+            fontFamily: 'Raleway',
             paddingBottom:"1%",
-            letterSpacing:'10px',
+            letterSpacing:'5px',
             display:"inline",
             [theme.breakpoints.down('xs')]:{
                 letterSpacing:'0px',

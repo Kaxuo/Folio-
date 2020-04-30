@@ -23,9 +23,9 @@ function Priorities() {
         title: {
             textAlign: "center",
             fontSize: "65px",
-            fontFamily: 'Lobster',
+            fontFamily: 'Raleway',
             paddingBottom: "1%",
-            letterSpacing: '10px',
+            letterSpacing: '5px',
             display: "inline",
             color: "white",
             [theme.breakpoints.down('xs')]: {

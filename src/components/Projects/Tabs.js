@@ -69,6 +69,9 @@ const useStyles = makeStyles((theme) => ({
         textAlign: "center",
         paddingTop: "1%"
     },
+    tab:{
+        borderRight:"3px solid white"
+    },
 }));
 
 export default function FullWidthTabs() {
@@ -96,10 +99,10 @@ export default function FullWidthTabs() {
                         aria-label="full width tabs example"
                         className={classes.tabz}
                     >
-                        <Tab label="Featured" {...a11yProps(0)} />
-                        <Tab label="Front End" {...a11yProps(1)} />
-                        <Tab label="Back End" {...a11yProps(2)} />
-                        <Tab label="Full Stack" {...a11yProps(3)} />
+                        <Tab className={classes.tab} label="Featured" {...a11yProps(0)} />
+                        <Tab className={classes.tab} label="Front End" {...a11yProps(1)} />
+                        <Tab className={classes.tab} label="Back End" {...a11yProps(2)} />
+                        <Tab  label="Full Stack" {...a11yProps(3)} />
                     </Tabs>
                 </AppBar>
             </div>
@@ -110,7 +113,7 @@ export default function FullWidthTabs() {
             >
                 <TabPanel className={classes.cards} value={value} index={0} dir={theme.direction}>
                     <Cards title="Beach Resort" languages="React/ContextAPI/React Router" description="A simple Beach Resort, allowing you to check and filter the rooms available, click on a specific room to get more information about it" picture={beach} live="https://beach-resort-project-contentful.netlify.app/" code="https://github.com/Kaxuo/BeachResort" />
-                    <Cards title="Blog" languages="Python/Django" description="Blog with authentication, by logging in, you're able to create/delete/edit posts.(to log in : ID => random , PW => 12345)" picture={blog} live="https://blog00000000000000000.herokuapp.com/" code="https://github.com/Kaxuo/blog" />
+                    <Cards title="Blog" languages="Python/Django" description="Blog with authentication, by logging in, you're able to create/delete/edit posts.(If you want to create a post, log in : ID => random , PW => 12345)" picture={blog} live="https://blog00000000000000000.herokuapp.com/" code="https://github.com/Kaxuo/blog" />
                     <Cards title="Authentication App" languages="React/Redux/Django" description="Authentication(Token) App(With ToDo App inside), Register or Log in to add your own Tasks. Mainly used to learn how to display user's data" picture={crud} live="https://todocrud000000.herokuapp.com/" code="https://github.com/Kaxuo/todocrud" />
                 </TabPanel>
                 <TabPanel className={classes.cards} value={value} index={1} dir={theme.direction}>
@@ -119,12 +122,12 @@ export default function FullWidthTabs() {
                     <Cards title="Pokedex" languages="React/React Router" description="Display all the pokemons. Get more informations about the pokemon by clicking on them. Data coming from PokeApi.co " picture={poke} live="https://jolly-brahmagupta-de67b8.netlify.app/" code="https://github.com/Kaxuo/Poke" />
                 </TabPanel>
                 <TabPanel className={classes.cards} value={value} index={2} dir={theme.direction}>
-                    <Cards title="Blog" languages="Python/Django" description="Blog with authentication, by logging in, you're able to create/delete/edit posts.(to log in : ID => random , PW => 12345)" picture={blog} live="https://blog00000000000000000.herokuapp.com/" code="https://github.com/Kaxuo/blog" />
+                    <Cards title="Blog" languages="Python/Django" description="Blog with authentication, by logging in, you're able to create/delete/edit posts.(If you want to create a post, log in : ID => random , PW => 12345)" picture={blog} live="https://blog00000000000000000.herokuapp.com/" code="https://github.com/Kaxuo/blog" />
                     <Cards title="To Do App" languages="Python/Django" description="Simple ToDo app linked to the backend with oblivious features such as 'Add Task, Delete Task, Delete Completed Task' and so on " picture={ToD} live="https://todospeacefulwave-72.herokuapp.com/" code="https://github.com/Kaxuo/TodoApp" />
                 </TabPanel>
                 <TabPanel className={classes.cards} value={value} index={3} dir={theme.direction}>
                     <Cards title="Authentication App" languages="React/Redux/Django" description="Authentication(Token) App(With ToDo App inside), Register or Log in to add your own Tasks. Mainly used to learn how to display user's data" picture={crud} live="https://todocrud000000.herokuapp.com/" code="https://github.com/Kaxuo/todocrud" />
-                    <Cards title="To Do App" languages="React/Django" description="Another To Do App but with React as the front end and Django as the backend. Just learning how to put those two together" picture={react} live="https://guarded-shore-23074.herokuapp.com/" code="https://github.com/Kaxuo/ReactDjangoTodo" />
+                    <Cards title="To Do App" languages="React/Django" description="Another To Do App but with React as the front end and Django as the backend. Just learning how to put those two frameworks together and make them work" picture={react} live="https://guarded-shore-23074.herokuapp.com/" code="https://github.com/Kaxuo/ReactDjangoTodo" />
                 </TabPanel>
             </SwipeableViews>
         </div>

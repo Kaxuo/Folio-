@@ -38,9 +38,8 @@ const useStyles = makeStyles((theme) => ({
   },
   text: {
     color:"black",
-    fontStyle: "italic",
     padding:"1%",
-    fontFamily: 'Bitter'
+    fontFamily: 'Lato',
 },
 }));
 
