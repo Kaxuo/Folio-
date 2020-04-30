@@ -23,9 +23,10 @@ const useStyles = makeStyles((theme) => ({
       boxShadow: "10px 10px 5px "
     },
     [theme.breakpoints.down('xs')]:{
-      margin:0,
-      padding:0,
-      width:"100%"
+      margin:"15% 0 0 0",
+      padding:0 ,
+      width:"100%",
+      height:"100%",
   }
   },
   media: {
@@ -34,7 +35,8 @@ const useStyles = makeStyles((theme) => ({
     cursor:"default"
   },
   view: {
-      paddingLeft:"23%"
+      justifyContent: "center",
+      
   },
   text: {
     color:"black",

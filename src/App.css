@@ -4,7 +4,7 @@
     height: 57.74px;
     background-color: #64c7cc;
     margin: 28.87px 0;
-    left:32%
+    left:32%;
   }
   
   .hexagon:before,
@@ -33,10 +33,25 @@
       left: 45%;
     }
   } 
+  @media only screen and  (max-width: 840px) {
+    .hexagon {
+      left: 44%;
+    }
+  } 
 
+  @media only screen and  (max-width: 680px) {
+    .hexagon {
+      left: 42%;
+    }
+  } 
   @media only screen and  (max-width: 600px) {
     .hexagon {
       left: 40%;
+    }
+  } 
+  @media only screen and  (max-width: 410px) {
+    .hexagon {
+      left: 36%;
     }
   } 
 
