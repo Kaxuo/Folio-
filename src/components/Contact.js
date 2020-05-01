@@ -126,25 +126,20 @@ function Contact() {
                     </div>
                     <div className={classes.form}>
                         <label className={classes.label}> First Name :</label>
-                        <input className={classes.input} value={state.firstName} onChange={handleChange} placeholder="First name" name="firstName" ref={register({ required: true, minLength: 2, maxLength: 80 })} />
+                        <input className={classes.input} value={state.firstName} onChange={handleChange} placeholder="First name" name="firstName" ref={register({ required: true })} />
                         {errors.firstName && errors.firstName.type === "required" && (<p className={classes.error}> This is required </p>)}
-                        {errors.firstName && errors.firstName.type === "minLength" && (<p className={classes.error}> This field requires a minimum length of 2 </p>)}
                         <label className={classes.label}> Last Name :</label>
-                        <input className={classes.input} value={state.lastName} onChange={handleChange} placeholder="Last name" name="lastName" ref={register({ required: true, minLength: 2 })} />
+                        <input className={classes.input} value={state.lastName} onChange={handleChange} placeholder="Last name" name="lastName" ref={register({ required: true})} />
                         {errors.lastName && errors.lastName.type === "required" && (<p className={classes.error}> This is required </p>)}
-                        {errors.lastName && errors.lastName.type === "minLength" && (<p className={classes.error}> This field requires a minimum length of 2 </p>)}
                         <label className={classes.label}> Subject :</label>
-                        <input className={classes.input} value={state.subject} onChange={handleChange} placeholder="Subject" name="subject" ref={register({ required: true, minLength: 2 })} />
+                        <input className={classes.input} value={state.subject} onChange={handleChange} placeholder="Subject" name="subject" ref={register({ required: true })} />
                         {errors.subject && errors.subject.type === "required" && (<p className={classes.error}> This is required </p>)}
-                        {errors.subject && errors.subject.type === "minLength" && (<p className={classes.error}> This field requires a minimum length of 2 </p>)}
                         <label className={classes.label}> Email :</label>
-                        <input className={classes.input} value={state.email} onChange={handleChange} placeholder="Email" name="email" ref={register({ required: true, minLength: 2, pattern: /^[a-zA-Z0-9.!#$%&'*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$/i })} />
+                        <input className={classes.input} value={state.email} onChange={handleChange} placeholder="Email" name="email" ref={register({ required: true })} />
                         {errors.email && errors.email.type === "required" && (<p className={classes.error}> This is required </p>)}
-                        {errors.email && errors.email.type === "pattern" && (<p className={classes.error}> Invalid Email </p>)}
                         <label className={classes.label}> Message :</label>
-                        <textarea className={classes.text} value={state.message} onChange={handleChange} placeholder="Message" name="message" ref={register({ required: true, minLength: 20 })} />
+                        <textarea className={classes.text} value={state.message} onChange={handleChange} placeholder="Message" name="message" ref={register({ required: true })} />
                         {errors.message && errors.message.type === "required" && (<p className={classes.error}> This is Required </p>)}
-                        {errors.message && errors.message.type === "minLength" && (<p className={classes.error}> This field requires a minimum length of 20 </p>)}
                         {error}
                     </div>
                 </div>

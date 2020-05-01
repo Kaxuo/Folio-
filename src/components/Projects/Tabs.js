@@ -64,6 +64,15 @@ const useStyles = makeStyles((theme) => ({
             width: "100%",
             left: "0"
         },
+        [theme.breakpoints.up('sm')]: {
+            width: "100%",
+            left:0
+        },
+        [theme.breakpoints.up('lg')]: {
+            width: "50%",
+            left:"25%"
+        },
+
     },
     cards: {
         textAlign: "center",

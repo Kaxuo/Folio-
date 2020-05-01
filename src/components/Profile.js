@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { makeStyles } from '@material-ui/core/styles';
 import Button from '@material-ui/core/Button';
 import ProgressBar from 'react-bootstrap/ProgressBar';
@@ -7,6 +7,17 @@ import Zoom from 'react-reveal/Zoom';
 
 
 function Profile() {
+
+    const [french, setfrench] = useState(true)
+    const [english, setenglish] = useState(true)
+    const [vietnamiese, setvietnamiese] = useState(true)
+    const [dutch, setdutch] = useState(false)
+    const [japanese, setjapanese] = useState(false)
+
+    const [lang,setlang] = useState({
+        french :true,
+        english:false
+    })
 
     const useStyles = makeStyles((theme) => ({
         page: {
@@ -42,7 +53,41 @@ function Profile() {
             textAlign: "justify",
             fontSize: "20px"
         },
+        button:{
+            backgroundColor:"#303F9F" ,
+            padding: "1%",
+             margin: "1%", 
+             cursor: "default" ,
+             color:"white",
+             "&:hover":{
+                 backgroundColor:"#303F9F",
+                 cursor: "default" ,
+
+             },
+        },
+        lang:{
+            backgroundColor:"#9A0036" ,
+            padding: "1%",
+             margin: "1%", 
+             cursor: "default" ,
+             color:"white",
+             "&:hover":{
+                 backgroundColor:"#9A0036",
+
+             },
+        },
+        disabled:{
+            backgroundColor:"inherit" ,
+            padding: "1%",
+             margin: "1%", 
+             cursor: "default" ,
+             color:"white",
+             "&:hover":{
+                backgroundColor:"inherit",
+            },
+        },
     }))
+
 
     const classes = useStyles()
 
@@ -77,35 +122,35 @@ function Profile() {
                 </div>
                 <div className={classes.profil}>
                     <div style={{ display: "flex", justifyContent: "space-between" }}>
-                        <Button style={{ padding: "1%", margin: "1%", cursor: "default" }} variant="contained" color="primary">
+                        <Button className={classes.button}   color="primary">
                             HTML
                     </Button>
                         <ProgressBar style={{ width: "85%", margin: "2%" }} label="Advanced"  now={80} />
                     </div>
                     <br />
                     <div style={{ display: "flex", justifyContent: "space-between" }}>
-                        <Button style={{ padding: "1%", margin: "1%", cursor: "default" }} variant="contained" color="primary">
+                        <Button className={classes.button}  color="primary">
                             CSS
                     </Button>
                         <ProgressBar style={{ width: "85%", margin: "2%" }} label="Advanced"  now={80} />
                     </div>
                     <br />
                     <div style={{ display: "flex", justifyContent: "space-between" }}>
-                        <Button style={{ padding: "1%", margin: "1%", cursor: "default" }} variant="contained" color="primary">
+                        <Button className={classes.button}  color="primary">
                             React
                     </Button>
                         <ProgressBar style={{ width: "85%", margin: "2%" }} label="Advanced"  now={85} />
                     </div>
                     <br />
                     <div style={{ display: "flex", justifyContent: "space-between" }}>
-                        <Button style={{ padding: "1%", margin: "1%", cursor: "default" }} variant="contained" color="primary">
+                        <Button className={classes.button} color="primary">
                             Python
                     </Button>
                         <ProgressBar style={{ width: "85%", margin: "2%" }} label="Experienced"  now={50} />
                     </div>
                     <br />
                     <div style={{ display: "flex", justifyContent: "space-between" }}>
-                        <Button style={{ padding: "1%", margin: "1%", cursor: "default" }} variant="contained" color="primary">
+                        <Button className={classes.button}  color="primary">
                             Django
                     </Button>
                         <ProgressBar style={{ width: "85%", margin: "2%" }} label="Experienced"  now={60} />
@@ -115,19 +160,20 @@ function Profile() {
                 <div style={{ backgroundColor: "#50617d" }} className={classes.profile}>
                     <h3 style={{ fontWeight: "bold" }}> Languages</h3>
                 </div>
-                <Button style={{ padding: "1%", margin: "1%", cursor: "default" }} variant="contained" color="secondary">
+                {/* THIS IS HOW YOU CHANGE CLASSNAME DEPENDING ON DATA WITH TOSE TICKS */}
+                <Button  className={french ? `${classes.lang}`: `${classes.disabled}`}  color="secondary"  onClick={() => setfrench(!french)}  >
                     French
                     </Button>
-                <Button style={{ padding: "1%", margin: "1%", cursor: "default" }} variant="contained" color="secondary">
+                <Button   className={english ? `${classes.lang}`: `${classes.disabled}`} onClick={() => setenglish(!english)}  color="secondary" >
                     English
                     </Button>
-                <Button style={{ padding: "1%", margin: "1%", cursor: "default" }} variant="contained" color="secondary">
+                <Button  className={vietnamiese ? `${classes.lang}`: `${classes.disabled}`}   onClick={() => setvietnamiese(!vietnamiese)} color="secondary">
                     Vietnamiese
                     </Button>
-                <Button style={{ padding: "1%", margin: "1%", cursor: "default" }} variant="outlined" color="secondary">
+                <Button  className={dutch ? `${classes.lang}`: `${classes.disabled}`}   onClick={() => setdutch(!dutch)} color="secondary">
                     Dutch
                     </Button>
-                <Button style={{ padding: "1%", margin: "1%", cursor: "default" }} variant="outlined" color="secondary">
+                <Button  className={japanese ? `${classes.lang}`: `${classes.disabled}`}  onClick={() => setjapanese(!japanese)}  color="secondary">
                     Japanese
                     </Button>
             </div>

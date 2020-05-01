@@ -76,6 +76,15 @@ function Hero(props) {
             width: "15%",
             padding: "1%",
         },
+        view:{
+            color: "white", 
+            border: "3px solid grey", 
+            fontSize: "20px", 
+            marginTop:"2%",
+            '&:hover':{
+                backgroundColor:"#303F9F"
+            }
+        }
     }))
 
     const classes = useStyles();
@@ -87,7 +96,7 @@ function Hero(props) {
             <div className={classes.hero}>
                 <h1 className={classes.title}> Nguyen Hoang</h1>
                 <h2 className={classes.stack}> Full Stack Developper</h2>
-                <Button onClick={() => props.scrollProjects()} style={{ color: "white", border: "3px solid grey", fontSize: "20px", marginTop:"2%" }} variant="outline" color="primary">
+                <Button onClick={() => props.scrollProjects()} className={classes.view}  color="primary">
                     View My Projects
                 </Button>
             </div>
