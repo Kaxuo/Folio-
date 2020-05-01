@@ -82,6 +82,7 @@ function Profile() {
              margin: "1%", 
              cursor: "default" ,
              color:"white",
+             border:"1px solid #9A0036",
              "&:hover":{
                 backgroundColor:"inherit",
             },
