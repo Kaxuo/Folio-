@@ -50,7 +50,7 @@ export default function MediaCard(props) {
 
   return (
     <Card className={classes.root}>
-      <a  className="link" style={{color:"inherit"}} href={props.live} target="_blank">
+      <a  rel="noopener noreferrer" className="link" style={{color:"inherit"}} href={props.live} target="_blank">
       <CardActionArea >
         <img 
           className={classes.media}

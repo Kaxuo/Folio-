@@ -14,10 +14,6 @@ function Profile() {
     const [dutch, setdutch] = useState(false)
     const [japanese, setjapanese] = useState(false)
 
-    const [lang,setlang] = useState({
-        french :true,
-        english:false
-    })
 
     const useStyles = makeStyles((theme) => ({
         page: {

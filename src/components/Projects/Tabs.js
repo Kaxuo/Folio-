@@ -122,7 +122,7 @@ export default function FullWidthTabs() {
             >
                 <TabPanel className={classes.cards} value={value} index={0} dir={theme.direction}>
                     <Cards title="Beach Resort" languages="React/ContextAPI/React Router" description="A simple Beach Resort, allowing you to check and filter the rooms available, click on a specific room to get more information about it" picture={beach} live="https://beach-resort-project-contentful.netlify.app/" code="https://github.com/Kaxuo/BeachResort" />
-                    <Cards title="Blog" languages="Python/Django" description="Blog with authentication, by logging in, you're able to create/delete/edit posts.(If you want to create a post, log in : ID => random , PW => 12345)" picture={blog} live="https://blog00000000000000000.herokuapp.com/" code="https://github.com/Kaxuo/blog" />
+                    <Cards title="Mock-Up Phone Store" languages="React/ContextAPI/React Router" description="Phone store where you can add items to a cart, delete/add more items to that cart and view a description of the items by clicking on it" picture={phone} live="https://happy-shaw-ee0b3d.netlify.app/" code="https://github.com/Kaxuo/Phone-Store" />
                     <Cards title="Authentication App" languages="React/Redux/Django" description="Authentication(Token) App(With ToDo App inside), Register or Log in to add your own Tasks. Mainly used to learn how to display user's data" picture={crud} live="https://todocrud000000.herokuapp.com/" code="https://github.com/Kaxuo/todocrud" />
                 </TabPanel>
                 <TabPanel className={classes.cards} value={value} index={1} dir={theme.direction}>
