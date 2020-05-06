@@ -14,8 +14,8 @@ const useStyles = makeStyles((theme) => ({
     backgroundColor:"white",
     display:"inline-block",
     marginTop :"25px",
-    marginLeft :"50px",
-    marginRight :"50px",
+    marginLeft :"20px",
+    marginRight :"20px",
     border:"3px outset black",
     transition: "transform .2s",
     '&:hover':{
