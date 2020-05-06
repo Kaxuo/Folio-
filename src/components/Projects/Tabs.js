@@ -15,6 +15,7 @@ import blog from '../../logo/blog.png'
 import ToD from '../../logo/ToD.png'
 import react from '../../logo/react.png'
 import crud from '../../logo/crud.png'
+import covid from '../../logo/covid.png'
 
 function TabPanel(props) {
     const { children, value, index, ...other } = props;
@@ -122,6 +123,7 @@ export default function FullWidthTabs() {
             >
                 <TabPanel className={classes.cards} value={value} index={0} dir={theme.direction}>
                     <Cards title="Beach Resort" languages="React/ContextAPI/React Router" description="A simple Beach Resort, allowing you to check and filter the rooms available, click on a specific room to get more information about it" picture={beach} live="https://beach-resort-project-contentful.netlify.app/" code="https://github.com/Kaxuo/BeachResort" />
+                    <Cards title="Coronavirus Tracker" languages="React" description="App that tracks the numbers of cases/recovered/deaths of the coronavirus. A chart is used to display the data" picture={covid} live="https://inspiring-perlman-64d5b8.netlify.app/" code="https://github.com/Kaxuo/VirusData" />
                     <Cards title="Mock-Up Phone Store" languages="React/ContextAPI/React Router" description="Phone store where you can add items to a cart, delete/add more items to that cart and view a description of the items by clicking on it" picture={phone} live="https://happy-shaw-ee0b3d.netlify.app/" code="https://github.com/Kaxuo/Phone-Store" />
                     <Cards title="Authentication App" languages="React/Redux/Django" description="Authentication(Token) App(With ToDo App inside), Register or Log in to add your own Tasks. Mainly used to learn how to display user's data" picture={crud} live="https://todocrud000000.herokuapp.com/" code="https://github.com/Kaxuo/todocrud" />
                 </TabPanel>
@@ -129,6 +131,7 @@ export default function FullWidthTabs() {
                     <Cards title="Beach Resort" languages="React/ContextAPI/React Router" description="A simple Beach Resort, allowing you to check and filter the rooms available, click on a specific room to get more information about it" picture={beach} live="https://beach-resort-project-contentful.netlify.app/" code="https://github.com/Kaxuo/BeachResort" />
                     <Cards title="Mock-Up Phone Store" languages="React/ContextAPI/React Router" description="Phone store where you can add items to a cart, delete/add more items to that cart and view a description of the items by clicking on it" picture={phone} live="https://happy-shaw-ee0b3d.netlify.app/" code="https://github.com/Kaxuo/Phone-Store" />
                     <Cards title="Pokedex" languages="React/React Router" description="Display all the pokemons. Get more informations about the pokemon by clicking on them. Data coming from PokeApi.co " picture={poke} live="https://jolly-brahmagupta-de67b8.netlify.app/" code="https://github.com/Kaxuo/Poke" />
+                    <Cards title="Coronavirus Tracker" languages="React" description="App that tracks the numbers of cases/recovered/deaths of the coronavirus. A chart is used to display the data" picture={covid} live="https://inspiring-perlman-64d5b8.netlify.app/" code="https://github.com/Kaxuo/VirusData" />
                 </TabPanel>
                 <TabPanel className={classes.cards} value={value} index={2} dir={theme.direction}>
                     <Cards title="Blog" languages="Python/Django" description="Blog with authentication, by logging in, you're able to create/delete/edit posts.(If you want to create a post, log in : ID => random , PW => 12345)" picture={blog} live="https://blog00000000000000000.herokuapp.com/" code="https://github.com/Kaxuo/blog" />

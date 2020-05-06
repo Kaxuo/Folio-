@@ -63,12 +63,12 @@ export default function MediaCard(props) {
             <strong style={{fontSize:"30px"}}>{props.title}</strong>
           </Typography>
           <Typography className={classes.text} component="p">
-            <strong style={{textDecoration:"underline", color:"black"}}>Language(s) used :</strong>
+            <strong style={{textDecoration:"underline", color:"black"}}>Language(s) used:</strong>
             <br/>
              {props.languages}
           </Typography>
           <Typography className={classes.text} component="p">
-          <strong style={{textDecoration:"underline", color:"black"}}>Description : </strong>
+          <strong style={{textDecoration:"underline", color:"black"}}>Description: </strong>
             <br/>
              {props.description}
           </Typography>
