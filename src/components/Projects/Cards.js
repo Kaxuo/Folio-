@@ -43,6 +43,12 @@ const useStyles = makeStyles((theme) => ({
     padding:"1%",
     fontFamily: 'Lato',
 },
+  container:{
+    cursor:'default',
+    '&:focus':{
+      outline:"none"
+    }
+  },
 }));
 
 export default function MediaCard(props) {
@@ -50,15 +56,15 @@ export default function MediaCard(props) {
 
   return (
     <Card className={classes.root}>
-      <a  rel="noopener noreferrer" className="link" style={{color:"inherit"}} href={props.live} target="_blank">
-      <CardActionArea >
+      {/* <a  rel="noopener noreferrer" className="link" style={{color:"inherit"}} href={props.live} target="_blank"> */}
+      <CardActionArea className={classes.container}>
         <img 
           className={classes.media}
           src={props.picture}
           alt={props.title}
           style={{borderBottom:"2px groove black"}}
         />
-        <CardContent style={{cursor:"default"}}>
+        <CardContent >
           <Typography >
             <strong style={{fontSize:"30px"}}>{props.title}</strong>
           </Typography>
@@ -74,7 +80,7 @@ export default function MediaCard(props) {
           </Typography>
         </CardContent>
       </CardActionArea>
-      </a>
+      {/* </a> */}
       <CardActions className={classes.view} >
         <Button size="small" color="primary">
           <a style={{color:"inherit",fontWeight:"bold",fontSize:"15px"}} rel="noopener noreferrer" href={props.live} target="_blank">View Live</a>
