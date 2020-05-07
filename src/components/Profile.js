@@ -108,7 +108,7 @@ function Profile() {
                 </div>
                 <p className={classes.profil}>
                 Secondary School, Mouscron<br />
-                2009 – 2015<br />
+                2008 – 2014<br />
                 University of Mons (UMONS)<br />
                 2015 - 2018<br />
                 University of Brussel (ULB)<br />
