@@ -43,6 +43,7 @@ const useStyles = makeStyles((theme) => ({
     padding:"1%",
     fontFamily: 'Lato',
 },
+// remove outline... !!
   container:{
     cursor:'default',
     '&:focus':{
@@ -56,7 +57,7 @@ export default function MediaCard(props) {
 
   return (
     <Card className={classes.root}>
-      {/* <a  rel="noopener noreferrer" className="link" style={{color:"inherit"}} href={props.live} target="_blank"> */}
+      <a  rel="noopener noreferrer" className="link" style={{color:"inherit"}} href={props.live} target="_blank">
       <CardActionArea className={classes.container}>
         <img 
           className={classes.media}
@@ -80,7 +81,7 @@ export default function MediaCard(props) {
           </Typography>
         </CardContent>
       </CardActionArea>
-      {/* </a> */}
+      </a>
       <CardActions className={classes.view} >
         <Button size="small" color="primary">
           <a style={{color:"inherit",fontWeight:"bold",fontSize:"15px"}} rel="noopener noreferrer" href={props.live} target="_blank">View Live</a>
