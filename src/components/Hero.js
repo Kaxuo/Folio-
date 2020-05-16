@@ -38,7 +38,7 @@ function Hero(props) {
                 letterSpacing: '0px',
                 fontSize: "100px",
             },
-            '&::after':{
+            '&::after': {
                 content: '""',
                 display: "block",
                 margin: "0 auto",
@@ -77,13 +77,13 @@ function Hero(props) {
             width: "15%",
             padding: "1%",
         },
-        view:{
-            color: "white", 
-            border: "3px solid grey", 
-            fontSize: "20px", 
-            marginTop:"2%",
-            '&:hover':{
-                backgroundColor:"#303F9F"
+        view: {
+            color: "white",
+            border: "3px solid grey",
+            fontSize: "20px",
+            marginTop: "2%",
+            '&:hover': {
+                backgroundColor: "#303F9F"
             }
         }
     }))
@@ -92,27 +92,27 @@ function Hero(props) {
 
     return (
         <div>
-        <Particles />
-        <div className={classes.background} >
-            <motion.div initial={{opacity:0 }} animate={{opacity: 1,color:"white"}} transition={{duration :4}}>
-            <div className={classes.hero}>
-                <motion.h1 initial={{y:500}} animate={{y:0}} transition={{duration:1}} className={classes.title}> Nguyen Hoang</motion.h1>
-                <motion.h2 initial={{y:500}} animate={{y:0}} transition={{duration:2}} className={classes.stack}> Full Stack Developper</motion.h2>
-                <motion.div initial={{y:500}} animate={{y:0}} transition={{duration:3}}>
-                <Button onClick={() => props.scrollProjects()} className={classes.view}  color="primary">
-                    View My Projects
-                </Button>
+            <Particles />
+            <div className={classes.background} >
+                <motion.div initial={{ opacity: 0 }} animate={{ opacity: 1 }} transition={{ duration: 3 }}>
+                    <div className={classes.hero}>
+                        <motion.h1 initial={{ y: 500 }} animate={{ y: 0 }} transition={{ duration: 1 }} className={classes.title}> Nguyen Hoang</motion.h1>
+                        <motion.h2 initial={{ y: 500 }} animate={{ y: 0 }} transition={{ duration: 1 }} className={classes.stack}> Full Stack Developper</motion.h2>
+                        <motion.div initial={{ y: 500 }} animate={{ y: 0 }} transition={{ duration: 2 }}>
+                            <Button onClick={() => props.scrollProjects()} className={classes.view} color="primary">
+                                View My Projects
+                            </Button>
+                        </motion.div>
+                    </div>
+                    <motion.div initial={{ y: 500 }} animate={{ y: 0 }} transition={{ duration: 3 }} className={classes.logos} >
+                        <img className={classes.logo} src={HTML} alt="html" />
+                        <img className={classes.logo} src={CSS} alt="html" />
+                        <img style={{ width: "13.5%" }} className={classes.logo} src={JS} alt="html" />
+                        <img style={{ width: "25%" }} className={classes.logo} src={react} alt="html" />
+                        <img className={classes.logo} src={Python} alt="html" />
+                        <img style={{ width: "16%" }} className={classes.logo} src={django} alt="html" />
+                    </motion.div>
                 </motion.div>
-            </div>
-            <motion.div initial={{y:500}} animate={{y:0}} transition={{duration:4}} className={classes.logos} >
-                <img className={classes.logo} src={HTML} alt="html" />
-                <img className={classes.logo} src={CSS} alt="html" />
-                <img style={{ width: "13.5%" }} className={classes.logo} src={JS} alt="html" />
-                <img style={{ width: "25%" }} className={classes.logo} src={react} alt="html" />
-                <img className={classes.logo} src={Python} alt="html" />
-                <img style={{ width: "16%" }} className={classes.logo} src={django} alt="html" />
-            </motion.div>
-            </motion.div>
         </div>
         </div>
     )

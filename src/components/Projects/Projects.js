@@ -2,6 +2,7 @@ import React from 'react';
 import { makeStyles } from '@material-ui/core/styles'
 import Tabs from './Tabs'
 import Zoom from 'react-reveal/Zoom';
+import {motion} from "framer-motion"
 
 
 function Projects() {
@@ -18,11 +19,10 @@ function Projects() {
             paddingBottom:"5%"
         },
         title:{
-            fontSize:"65px",
+            fontSize:"55px",
             fontFamily: 'Raleway',
             paddingBottom:"1%",
             letterSpacing:'5px',
-            display:"inline",
             [theme.breakpoints.down('xs')]:{
                 letterSpacing:'0px',
             },
@@ -42,7 +42,7 @@ function Projects() {
     return (
         <div className={classes.background}>
             <Zoom>
-            <h1 className={classes.title}>Projects</h1>
+            <motion.h1 className={classes.title}>Projects</motion.h1>
             <Tabs/>
             </Zoom>
         </div>

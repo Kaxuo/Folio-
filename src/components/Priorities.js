@@ -8,6 +8,7 @@ import { BsFillPersonLinesFill } from "react-icons/bs";
 import Grid from '@material-ui/core/Grid';
 import Fade from 'react-reveal/Fade';
 import Zoom from 'react-reveal/Zoom';
+import { motion } from 'framer-motion'
 
 function Priorities() {
     const useStyles = makeStyles((theme) => ({
@@ -46,7 +47,7 @@ function Priorities() {
             // marginTop:"20%",
             bottom: "15px",
             position: "relative",
-            left: "24px"
+            left: "24px",
         },
         grid: {
             paddingTop: "5vh",
@@ -65,9 +66,13 @@ function Priorities() {
             <Grid className={classes.grid} justify="center" container spacing={2}>
                 <Grid item xs={12} md={2} >
                     <Fade left>
-                        <div className="hexagon">
+                        <motion.div whileTap={{
+                            scale: 1.3,
+                            rotate: 360,
+                        }}
+                            className="hexagon">
                             <p className={classes.icon}> <GiBookCover /></p>
-                        </div>
+                        </motion.div>
                         <div className={classes.text}>
                             <h3 style={{ color: "white", fontWeight: "bold" }}>Open-minded</h3>
                             <p style={{ color: "white" }}>Always eager to learn new languages when needed to complete a task</p>
@@ -76,9 +81,13 @@ function Priorities() {
                 </Grid>
                 <Grid item xs={12} md={2} >
                     <Fade left>
-                        <div className="hexagon">
+                        <motion.div whileTap={{
+                            scale: 1.3,
+                            rotate: 360,
+                        }}
+                            className="hexagon">
                             <p className={classes.icon}> <BsFillPersonLinesFill /></p>
-                        </div>
+                        </motion.div>
                         <div className={classes.text}>
                             <h3 style={{ color: "white", fontWeight: "bold" }}> Motivated</h3>
                             <p style={{ color: "white" }}>Extremely motivated to work in this field, always willing to give my best to complete the tasks</p>
@@ -87,9 +96,13 @@ function Priorities() {
                 </Grid>
                 <Grid item xs={12} md={2} >
                     <Zoom >
-                    <div className="hexagon">
+                        <motion.div whileTap={{
+                            scale: 1.3,
+                            rotate: 360,
+                        }}
+                            className="hexagon">
                             <p className={classes.icon}> <FcMultipleSmartphones /></p>
-                        </div>
+                        </motion.div>
                         <div className={classes.text}>
                             <h3 style={{ color: "white", fontWeight: "bold" }}> Responsive</h3>
                             <p style={{ color: "white" }}>My layouts will work on any device, big or small.</p>
@@ -98,9 +111,13 @@ function Priorities() {
                 </Grid>
                 <Grid item xs={12} md={2} >
                     <Fade right>
-                        <div className="hexagon">
+                        <motion.div whileTap={{
+                            scale: 1.3,
+                            rotate: 360,
+                        }}
+                            className="hexagon">
                             <p className={classes.icon}> <AiFillCodeSandboxCircle /></p>
-                        </div>
+                        </motion.div>
                         <div className={classes.text}>
                             <h3 style={{ color: "white", fontWeight: "bold" }}>Structure</h3>
                             <p style={{ color: "white" }}>Code easy to read and websites user friendly </p>
@@ -108,14 +125,18 @@ function Priorities() {
                     </Fade>
                 </Grid>
                 <Grid item xs={12} md={2} >
-                <Fade right>
-                    <div className="hexagon">
-                        <p className={classes.icon}> <FiUsers /></p>
-                    </div>
-                    <div className={classes.text}>
-                        <h3 style={{ color: "white", fontWeight: "bold" }}> Dynamic</h3>
-                        <p style={{ color: "white" }}>A dynamic website is much more enjoyable than a static one</p>
-                    </div>
+                    <Fade right>
+                        <motion.div whileTap={{
+                            scale: 1.3,
+                            rotate: 360,
+                        }}
+                            className="hexagon">
+                            <p className={classes.icon}> <FiUsers /></p>
+                        </motion.div>
+                        <div className={classes.text}>
+                            <h3 style={{ color: "white", fontWeight: "bold" }}> Dynamic</h3>
+                            <p style={{ color: "white" }}>A dynamic website is much more enjoyable than a static one</p>
+                        </div>
                     </Fade>
                 </Grid>
             </Grid>
