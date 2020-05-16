@@ -9,7 +9,6 @@ import Grid from '@material-ui/core/Grid';
 import Fade from 'react-reveal/Fade';
 import Zoom from 'react-reveal/Zoom';
 
-
 function Priorities() {
     const useStyles = makeStyles((theme) => ({
         page: {
