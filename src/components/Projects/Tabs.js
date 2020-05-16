@@ -108,6 +108,7 @@ export default function FullWidthTabs() {
                         variant="fullWidth"
                         aria-label="full width tabs example"
                         className={classes.tabz}
+
                     >
                         <Tab className={classes.tab} label="Featured" {...a11yProps(0)} />
                         <Tab className={classes.tab} label="Front End" {...a11yProps(1)} />
@@ -122,10 +123,12 @@ export default function FullWidthTabs() {
                 onChangeIndex={handleChangeIndex}
             >
                 <TabPanel className={classes.cards} value={value} index={0} dir={theme.direction}>
+                    <div >
                     <Cards title="Beach Resort" languages="React/ContextAPI/React Router" description="A simple Beach Resort, allowing you to check and filter the rooms available, click on a specific room to get more information about it" picture={beach} live="https://beach-resort-project-contentful.netlify.app/" code="https://github.com/Kaxuo/BeachResort" />
                     <Cards title="Coronavirus Tracker" languages="React" description="App that tracks the numbers of cases/recovered/deaths of the coronavirus, sorted by. Data coming from https://covid19.mathdro.id/api" picture={covid} live="https://inspiring-perlman-64d5b8.netlify.app/" code="https://github.com/Kaxuo/VirusData" />
                     <Cards title="Mock-Up Phone Store" languages="React/ContextAPI/React Router" description="Phone store where you can add items to a cart, delete/add more items to that cart and view a description of the items by clicking on it" picture={phone} live="https://happy-shaw-ee0b3d.netlify.app/" code="https://github.com/Kaxuo/Phone-Store" />
                     <Cards title="Authentication App" languages="React/Redux/Django" description="Authentication(Token) App(With ToDo App inside), Register or Log in to add your own Tasks. Mainly used to learn how to display user's data" picture={crud} live="https://todocrud000000.herokuapp.com/" code="https://github.com/Kaxuo/todocrud" />
+                    </div>
                 </TabPanel>
                 <TabPanel className={classes.cards} value={value} index={1} dir={theme.direction}>
                     <Cards title="Beach Resort" languages="React/ContextAPI/React Router" description="A simple Beach Resort, allowing you to check and filter the rooms available, click on a specific room to get more information about it" picture={beach} live="https://beach-resort-project-contentful.netlify.app/" code="https://github.com/Kaxuo/BeachResort" />

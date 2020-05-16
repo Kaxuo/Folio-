@@ -63,7 +63,6 @@ function Priorities() {
     return (
         <div className={classes.page}>
             <div className={classes.title} ><h1>Priorities</h1></div>
-
             <Grid className={classes.grid} justify="center" container spacing={2}>
                 <Grid item xs={12} md={2} >
                     <Fade left>

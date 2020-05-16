@@ -19,7 +19,7 @@ function Contact() {
         message: "",
         subject: ""
     })
-    const { register, handleSubmit, watch, errors } = useForm()
+    const { register, handleSubmit, errors } = useForm()
 
 
     const onSubmit = data => {

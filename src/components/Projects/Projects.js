@@ -6,6 +6,7 @@ import Zoom from 'react-reveal/Zoom';
 
 function Projects() {
 
+
     const useStyles = makeStyles((theme) => ({
         background:{
             backgroundColor:"#DCDCDC",

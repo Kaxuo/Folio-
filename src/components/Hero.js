@@ -9,6 +9,7 @@ import Python from '../logo/Python.svg'
 import django from '../logo/django.svg'
 import Particles from './Particles'
 import Button from '@material-ui/core/Button';
+import { motion } from 'framer-motion'
 
 
 function Hero(props) {
@@ -93,21 +94,25 @@ function Hero(props) {
         <div>
         <Particles />
         <div className={classes.background} >
+            <motion.div initial={{opacity:0 }} animate={{opacity: 1,color:"white"}} transition={{duration :4}}>
             <div className={classes.hero}>
-                <h1 className={classes.title}> Nguyen Hoang</h1>
-                <h2 className={classes.stack}> Full Stack Developper</h2>
+                <motion.h1 initial={{y:500}} animate={{y:0}} transition={{duration:1}} className={classes.title}> Nguyen Hoang</motion.h1>
+                <motion.h2 initial={{y:500}} animate={{y:0}} transition={{duration:2}} className={classes.stack}> Full Stack Developper</motion.h2>
+                <motion.div initial={{y:500}} animate={{y:0}} transition={{duration:3}}>
                 <Button onClick={() => props.scrollProjects()} className={classes.view}  color="primary">
                     View My Projects
                 </Button>
+                </motion.div>
             </div>
-            <div className={classes.logos} >
+            <motion.div initial={{y:500}} animate={{y:0}} transition={{duration:4}} className={classes.logos} >
                 <img className={classes.logo} src={HTML} alt="html" />
                 <img className={classes.logo} src={CSS} alt="html" />
                 <img style={{ width: "13.5%" }} className={classes.logo} src={JS} alt="html" />
                 <img style={{ width: "25%" }} className={classes.logo} src={react} alt="html" />
                 <img className={classes.logo} src={Python} alt="html" />
                 <img style={{ width: "16%" }} className={classes.logo} src={django} alt="html" />
-            </div>
+            </motion.div>
+            </motion.div>
         </div>
         </div>
     )
