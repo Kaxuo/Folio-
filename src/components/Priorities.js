@@ -8,7 +8,6 @@ import { BsFillPersonLinesFill } from "react-icons/bs";
 import Grid from '@material-ui/core/Grid';
 import Fade from 'react-reveal/Fade';
 import Zoom from 'react-reveal/Zoom';
-import { motion } from 'framer-motion'
 
 function Priorities() {
     const useStyles = makeStyles((theme) => ({
@@ -66,13 +65,10 @@ function Priorities() {
             <Grid className={classes.grid} justify="center" container spacing={2}>
                 <Grid item xs={12} md={2} >
                     <Fade left>
-                        <motion.div whileTap={{
-                            scale: 1.3,
-                            rotate: 360,
-                        }}
+                        <div
                             className="hexagon">
                             <p className={classes.icon}> <GiBookCover /></p>
-                        </motion.div>
+                        </div>
                         <div className={classes.text}>
                             <h3 style={{ color: "white", fontWeight: "bold" }}>Open-minded</h3>
                             <p style={{ color: "white" }}>Always eager to learn new languages when needed to complete a task</p>
@@ -81,13 +77,9 @@ function Priorities() {
                 </Grid>
                 <Grid item xs={12} md={2} >
                     <Fade left>
-                        <motion.div whileTap={{
-                            scale: 1.3,
-                            rotate: 360,
-                        }}
-                            className="hexagon">
+                        <div className="hexagon">
                             <p className={classes.icon}> <BsFillPersonLinesFill /></p>
-                        </motion.div>
+                        </div>
                         <div className={classes.text}>
                             <h3 style={{ color: "white", fontWeight: "bold" }}> Motivated</h3>
                             <p style={{ color: "white" }}>Extremely motivated to work in this field, always willing to give my best to complete the tasks</p>
@@ -96,13 +88,9 @@ function Priorities() {
                 </Grid>
                 <Grid item xs={12} md={2} >
                     <Zoom >
-                        <motion.div whileTap={{
-                            scale: 1.3,
-                            rotate: 360,
-                        }}
-                            className="hexagon">
+                        <div className="hexagon">
                             <p className={classes.icon}> <FcMultipleSmartphones /></p>
-                        </motion.div>
+                        </div>
                         <div className={classes.text}>
                             <h3 style={{ color: "white", fontWeight: "bold" }}> Responsive</h3>
                             <p style={{ color: "white" }}>My layouts will work on any device, big or small.</p>
@@ -111,13 +99,9 @@ function Priorities() {
                 </Grid>
                 <Grid item xs={12} md={2} >
                     <Fade right>
-                        <motion.div whileTap={{
-                            scale: 1.3,
-                            rotate: 360,
-                        }}
-                            className="hexagon">
+                        <div className="hexagon">
                             <p className={classes.icon}> <AiFillCodeSandboxCircle /></p>
-                        </motion.div>
+                        </div>
                         <div className={classes.text}>
                             <h3 style={{ color: "white", fontWeight: "bold" }}>Structure</h3>
                             <p style={{ color: "white" }}>Code easy to read and websites user friendly </p>
@@ -126,13 +110,9 @@ function Priorities() {
                 </Grid>
                 <Grid item xs={12} md={2} >
                     <Fade right>
-                        <motion.div whileTap={{
-                            scale: 1.3,
-                            rotate: 360,
-                        }}
-                            className="hexagon">
+                        <div className="hexagon">
                             <p className={classes.icon}> <FiUsers /></p>
-                        </motion.div>
+                        </div>
                         <div className={classes.text}>
                             <h3 style={{ color: "white", fontWeight: "bold" }}> Dynamic</h3>
                             <p style={{ color: "white" }}>A dynamic website is much more enjoyable than a static one</p>

@@ -7,6 +7,7 @@ import CardContent from '@material-ui/core/CardContent';
 import Button from '@material-ui/core/Button';
 import Typography from '@material-ui/core/Typography';
 
+
 const useStyles = makeStyles((theme) => ({
   root: {
     width: 345,
@@ -72,7 +73,7 @@ export default function MediaCard(props) {
           <Typography className={classes.text} component="p">
             <strong style={{textDecoration:"underline", color:"black"}}>Language(s) used:</strong>
             <br/>
-             {props.languages}
+             <strong style={{fontStyle: "italic"}}>{props.languages}</strong>
           </Typography>
           <Typography className={classes.text} component="p">
           <strong style={{textDecoration:"underline", color:"black"}}>Description: </strong>

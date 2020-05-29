@@ -16,6 +16,7 @@ import ToD from '../../logo/ToD.png'
 import react from '../../logo/react.png'
 import crud from '../../logo/crud.png'
 import covid from '../../logo/covid.png'
+import MERN from '../../logo/MERN.png'
 
 function TabPanel(props) {
     const { children, value, index, ...other } = props;
@@ -80,7 +81,7 @@ const useStyles = makeStyles((theme) => ({
         paddingTop: "1%"
     },
     tab: {
-        borderRight: "3px solid white"
+        borderRight: "3px solid white",
     },
 }));
 
@@ -88,7 +89,7 @@ export default function FullWidthTabs() {
     const classes = useStyles();
     const theme = useTheme();
     const [value, setValue] = React.useState(0);
-    
+
     const handleChange = (event, newValue) => {
         setValue(newValue);
     };
@@ -127,11 +128,11 @@ export default function FullWidthTabs() {
                         <Cards title="Beach Resort" languages="React/ContextAPI/React Router" description="A simple Beach Resort, allowing you to check and filter the rooms available, click on a specific room to get more information about it" picture={beach} live="https://beach-resort-project-contentful.netlify.app/" code="https://github.com/Kaxuo/BeachResort" />
                         <Cards title="Coronavirus Tracker" languages="React" description="App that tracks the numbers of cases/recovered/deaths of the coronavirus, sorted by. Data coming from https://covid19.mathdro.id/api" picture={covid} live="https://inspiring-perlman-64d5b8.netlify.app/" code="https://github.com/Kaxuo/VirusData" />
                         <Cards title="Mock-Up Phone Store" languages="React/ContextAPI/React Router" description="Phone store where you can add items to a cart, delete/add more items to that cart and view a description of the items by clicking on it" picture={phone} live="https://happy-shaw-ee0b3d.netlify.app/" code="https://github.com/Kaxuo/Phone-Store" />
-                        <Cards title="Authentication App" languages="React/Redux/Django" description="Authentication(Token) App(With ToDo App inside), Register or Log in to add your own Tasks. Mainly used to learn how to display user's data" picture={crud} live="https://todocrud000000.herokuapp.com/" code="https://github.com/Kaxuo/todocrud" />
+                        <Cards title="MERN Stack" languages="MongoDB/ExpressJs/React/NodeJS" description="A Simple Shopping App but with Authentication. Using the MERN Stack and animations. Please, Register to manage the database." picture={MERN} live="https://mernshoppinglistmern.herokuapp.com/" code="https://github.com/Kaxuo/mernstack" />
                     </div>
                 </TabPanel>
                 <TabPanel className={classes.cards} value={value} index={1} dir={theme.direction}>
-                <div>
+                    <div>
                         <Cards title="Beach Resort" languages="React/ContextAPI/React Router" description="A simple Beach Resort, allowing you to check and filter the rooms available, click on a specific room to get more information about it" picture={beach} live="https://beach-resort-project-contentful.netlify.app/" code="https://github.com/Kaxuo/BeachResort" />
                         <Cards title="Mock-Up Phone Store" languages="React/ContextAPI/React Router" description="Phone store where you can add items to a cart, delete/add more items to that cart and view a description of the items by clicking on it" picture={phone} live="https://happy-shaw-ee0b3d.netlify.app/" code="https://github.com/Kaxuo/Phone-Store" />
                         <Cards title="Pokedex" languages="React/React Router" description="Display all the pokemons. Get more informations about the pokemon by clicking on them. Data coming from PokeApi.co " picture={poke} live="https://jolly-brahmagupta-de67b8.netlify.app/" code="https://github.com/Kaxuo/Poke" />
@@ -143,6 +144,7 @@ export default function FullWidthTabs() {
                     <Cards title="To Do App" languages="Python/Django" description="Simple ToDo app linked to the backend with oblivious features such as 'Add Task, Delete Task, Delete Completed Task' and so on " picture={ToD} live="https://todospeacefulwave-72.herokuapp.com/" code="https://github.com/Kaxuo/TodoApp" />
                 </TabPanel>
                 <TabPanel className={classes.cards} value={value} index={3} dir={theme.direction}>
+                    <Cards title="MERN Stack" languages="MongoDB/ExpressJs/React/NodeJS" description="A Simple Shopping App but with Authentication. Using the MERN Stack and animations. Please, Register to manage the database." picture={MERN} live="https://mernshoppinglistmern.herokuapp.com/" code="https://github.com/Kaxuo/mernstack" />
                     <Cards title="Authentication App" languages="React/Redux/Django" description="Authentication(Token) App(With ToDo App inside), Register or Log in to add your own Tasks. Mainly used to learn how to display user's data" picture={crud} live="https://todocrud000000.herokuapp.com/" code="https://github.com/Kaxuo/todocrud" />
                     <Cards title="To Do App" languages="React/Django" description="Another To Do App but with React as the front end and Django as the backend. Just learning how to put those two frameworks together and make them work" picture={react} live="https://guarded-shore-23074.herokuapp.com/" code="https://github.com/Kaxuo/ReactDjangoTodo" />
                 </TabPanel>

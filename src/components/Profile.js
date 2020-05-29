@@ -1,19 +1,11 @@
-import React, { useState } from 'react';
+import React from 'react';
 import { makeStyles } from '@material-ui/core/styles';
 import Button from '@material-ui/core/Button';
 import ProgressBar from 'react-bootstrap/ProgressBar';
 import Zoom from 'react-reveal/Zoom';
-
-
+import Box from '@material-ui/core/Box';
 
 function Profile() {
-
-    const [french, setfrench] = useState(true)
-    const [english, setenglish] = useState(true)
-    const [vietnamiese, setvietnamiese] = useState(true)
-    const [dutch, setdutch] = useState(false)
-    const [japanese, setjapanese] = useState(false)
-
 
     const useStyles = makeStyles((theme) => ({
         page: {
@@ -47,6 +39,25 @@ function Profile() {
         profil: {
             padding: "2%",
             textAlign: "justify",
+            fontSize: "20px",
+        },
+        skills: {
+            padding: "2%",
+            textAlign: "justify",
+            fontSize: "20px",
+            [theme.breakpoints.down('md')]: {
+                flexDirection:"column",
+                alignItems: "center"
+              },
+        },
+        break:{
+            [theme.breakpoints.down('md')]:{
+                padding:"3%"
+            },
+        },
+        education: {
+            padding: "2%",
+            textAlign: "justify",
             fontSize: "20px"
         },
         button: {
@@ -55,6 +66,7 @@ function Profile() {
             margin: "1%",
             cursor: "default",
             color: "white",
+            width: "15%",
             "&:hover": {
                 backgroundColor: "#303F9F",
                 cursor: "default",
@@ -99,72 +111,93 @@ function Profile() {
                     <div className={classes.profile}>
                         <h3 style={{ fontWeight: "bold" }}>Profile </h3>
                     </div>
-                    <p className={classes.profil} > Hello! Thanks for checking my resumé. <br />I'm a self-taught programmer who started coding as a hobby.<br />I studied law at the University of Mons and then Brussels but at some point, I wasn't motivated anymore and put it on hold. I started studying programming on my own since it was more appealing. I'm always motivated to learn new things so if there is a language you wish for me to learn, I won't mind doing so.<br /> I'm highly motivated to work in this field and if you will have me, I will do my best to meet your expectations.
-                Unfortunately, I do not have any experience working in this field but I am really looking forward to start working on some projects.
-                I'm fluent in french, english and vietnamiese. I can speak a little bit of dutch and japanese (however, I wouldn't mind improving my dutch if given the chance).
-                </p>
+                    <p className={classes.profil} > Hello! Thanks for checking my resume.
+                    <br />I'm a self-taught programmer who started coding as a hobby.
+                    <br />
+                        <br />I studied law at the University of Mons and then Brussel but then at some point, I decided to study programming on my own since it was more appealing. I'm always motivated to learn new things so if there is a language you wish for me to learn, I won't mind doing so. I'm highly motivated to work in this field and if you will have me, I will do my best to meet your expectations.
+                    <br />
+                        <br /> I'm highly motivated to work in this field and if you will have me, I will do my best to meet your expectations.
+                    Unfortunately, I do not have any experience working in this field but I am really looking forward to start working on some projects.
+                    I'm fluent in french, english and vietnamiese. I can speak a little bit of dutch and japanese (however, I wouldn't mind improving my dutch if given the chance).
+                    </p>
                     <div style={{ backgroundColor: "#50617d" }} className={classes.profile}>
                         <h3 style={{ fontWeight: "bold" }}>Education </h3>
                     </div>
-                    <p className={classes.profil}>
-                        Secondary School, Mouscron<br />
-                2008 – 2014<br />
-                University of Mons (UMONS)<br />
-                2015 - 2018<br />
-                University of Brussel (ULB)<br />
-                2018 - 2019<br />
+                    <p className={classes.education}>
+                        2008 – 2014 : Secondary School, Mouscron<br />
+
+                    2015 – 2018 : University of Mons (UMONS)<br />
+
+                    2018 – 2019 : University of Brussel (ULB)<br />
+
                     </p>
                     <div style={{ backgroundColor: "#50617d" }} className={classes.profile}>
-                        <h3 style={{ fontWeight: "bold" }}> Skills </h3>
+                        <h3 style={{ fontWeight: "bold" }}> Programming Skills </h3>
+                    </div>
+                    <Box display="flex" justifyContent="space-between" className={classes.skills}>
+                        <Box className={classes.break}>
+                            <p style={{fontWeight:"bold",fontStyle:"italic"}}> Front-End Languages :</p>
+                            <ul>
+                                <li>HTML/CSS</li>
+                                <li>Javascript</li>
+                                <li>React(Redux)</li>
+                            </ul>
+                        </Box>
+                        <Box className={classes.break}>
+                            <p style={{fontWeight:"bold",fontStyle:"italic"}}> Back-End Languages :</p>
+                            <ul>
+                                <li>Python(Django)</li>
+                                <li>Node.js(Express.js)</li>
+                            </ul>
+                        </Box>
+                        <Box className={classes.break}>
+                            <p style={{fontWeight:"bold",fontStyle:"italic"}}> Database Management :</p>
+                            <ul>
+                                <li>SQL(MySQL)</li>
+                                <li>noSQL(MongoDB)</li>
+                            </ul>
+                        </Box>
+                    </Box>
+                    <div style={{ backgroundColor: "#50617d" }} className={classes.profile}>
+                        <h3 style={{ fontWeight: "bold" }}> Languages</h3>
                     </div>
                     <div className={classes.profil}>
                         <div style={{ display: "flex", justifyContent: "space-between" }}>
                             <Button className={classes.button} color="primary">
-                                HTML
+                                French
                             </Button>
-                            <ProgressBar style={{ width: "85%", margin: "2%" }} label="Advanced" now={80} />
+                            <ProgressBar style={{ width: "80%", margin: "2%" }} label="Native" now={90} />
                         </div>
                         <br />
                         <div style={{ display: "flex", justifyContent: "space-between" }}>
                             <Button className={classes.button} color="primary">
-                                CSS
+                                English
                             </Button>
-                            <ProgressBar style={{ width: "85%", margin: "2%" }} label="Advanced" now={80} />
+                            <ProgressBar style={{ width: "80%", margin: "2%" }} label="Fluent" now={80} />
                         </div>
                         <br />
                         <div style={{ display: "flex", justifyContent: "space-between" }}>
                             <Button className={classes.button} color="primary">
-                                React
+                                Vietnamiese
                             </Button>
-                            <ProgressBar style={{ width: "85%", margin: "2%" }} label="Advanced" now={85} />
+                            <ProgressBar style={{ width: "80%", margin: "2%" }} label="Fluent" now={80} />
                         </div>
                         <br />
                         <div style={{ display: "flex", justifyContent: "space-between" }}>
                             <Button className={classes.button} color="primary">
-                                Python
+                                Dutch
                             </Button>
-                            <ProgressBar style={{ width: "85%", margin: "2%" }} label="Experienced" now={50} />
+                            <ProgressBar style={{ width: "80%", margin: "2%" }} label="Intermediate" now={50} />
                         </div>
                         <br />
                         <div style={{ display: "flex", justifyContent: "space-between" }}>
                             <Button className={classes.button} color="primary">
-                                Django
+                                Japanese
                             </Button>
-                            <ProgressBar style={{ width: "85%", margin: "2%" }} label="Experienced" now={60} />
+                            <ProgressBar style={{ width: "80%", margin: "2%" }} label="Beginner" now={30} />
                         </div>
-                        <br />
-                        <div style={{ display: "flex", justifyContent: "space-between" }}>
-                            <Button className={classes.button} color="primary">
-                                MySQL
-                            </Button>
-                            <ProgressBar style={{ width: "85%", margin: "2%" }} label="Experienced" now={50} />
-                        </div>
-                        <br />
                     </div>
-                    <div style={{ backgroundColor: "#50617d" }} className={classes.profile}>
-                        <h3 style={{ fontWeight: "bold" }}> Languages</h3>
-                    </div>
-                    {/* THIS IS HOW YOU CHANGE CLASSNAME DEPENDING ON DATA WITH TOSE TICKS */}
+                    {/* THIS IS HOW YOU CHANGE CLASSNAME DEPENDING ON DATA WITH TOSE TICKS
                     <Button className={french ? `${classes.lang}` : `${classes.disabled}`} color="secondary" onClick={() => setfrench(!french)}  >
                         French
                     </Button>
@@ -179,7 +212,7 @@ function Profile() {
                     </Button>
                     <Button className={japanese ? `${classes.lang}` : `${classes.disabled}`} onClick={() => setjapanese(!japanese)} color="secondary">
                         Japanese
-                    </Button>
+                    </Button> */}
                 </div>
             </Zoom>
         </div>
