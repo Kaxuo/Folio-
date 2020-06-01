@@ -61,7 +61,7 @@ function Navbar(props) {
         },
         logo: {
             position: "absolute",
-            left: "50%",
+            left: "51%",
             marginLeft: "-50px!important",
             display: "block",
             width:"60px",
