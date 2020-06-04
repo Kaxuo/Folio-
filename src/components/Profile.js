@@ -114,10 +114,9 @@ function Profile() {
                     <p className={classes.profil} > Hello! Thanks for checking my resume.
                     <br />I'm a self-taught programmer who started coding as a hobby.
                     <br />
-                        <br />I studied law at the University of Mons and then Brussel but then at some point, I decided to study programming on my own since it was more appealing. I'm always motivated to learn new things so if there is a language you wish for me to learn, I won't mind doing so. I'm highly motivated to work in this field and if you will have me, I will do my best to meet your expectations.
+                        <br />I studied law at the University of Mons and then Brussel but then at some point, I decided to study programming on my own since it was more appealing. I'm always motivated to learn new things so if there is a language you want me to learn, I won't mind doing so.
                     <br />
-                        <br /> I'm highly motivated to work in this field and if you will have me, I will do my best to meet your expectations.
-                    Unfortunately, I do not have any experience working in this field but I am really looking forward to start working on some projects.
+                        <br /> 
                     I'm fluent in french, english and vietnamiese. I can speak a little bit of dutch and japanese (however, I wouldn't mind improving my dutch if given the chance).
                     </p>
                     <div style={{ backgroundColor: "#50617d" }} className={classes.profile}>
@@ -166,7 +165,7 @@ function Profile() {
                             <Button className={classes.button} color="primary">
                                 French
                             </Button>
-                            <ProgressBar style={{ width: "80%", margin: "2%" }} label="Native" now={90} />
+                            <ProgressBar style={{ width: "80%", margin: "2%" }} label="Native" now={100} />
                         </div>
                         <br />
                         <div style={{ display: "flex", justifyContent: "space-between" }}>
