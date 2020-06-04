@@ -114,10 +114,10 @@ function Profile() {
                     <p className={classes.profil} > Hello! Thanks for checking my resume.
                     <br />I'm a self-taught programmer who started coding as a hobby.
                     <br />
-                        <br />I studied law at the University of Mons and then Brussel but then at some point, I decided to study programming on my own since it was more appealing. I'm always motivated to learn new things so if there is a language you want me to learn, I won't mind doing so.
+                        <br />I studied law at the University of Mons and then Brussel but then at some point, I decided to study programming on my own since it was more appealing. I'm always motivated to learn new languages and try new things.
                     <br />
                         <br /> 
-                    I'm fluent in french, english and vietnamiese. I can speak a little bit of dutch and japanese (however, I wouldn't mind improving my dutch if given the chance).
+                    I'm fluent in French, English and Vietnamiese. I can speak a little bit of Dutch and Japanese (however, I wouldn't mind improving my dutch if given the chance).
                     </p>
                     <div style={{ backgroundColor: "#50617d" }} className={classes.profile}>
                         <h3 style={{ fontWeight: "bold" }}>Education </h3>
