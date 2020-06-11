@@ -65,3 +65,27 @@
 text-decoration: none;
   }
 
+/* width */
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+/* width */
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  border-radius: 6px;
+  border: 3px solid #888; 
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #555; 
+}
+
+::-webkit-scrollbar-track {
+  background: #0B0B0D
+}

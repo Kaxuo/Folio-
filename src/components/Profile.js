@@ -67,6 +67,7 @@ function Profile() {
             cursor: "default",
             color: "white",
             width: "15%",
+            pointerEvents: "none",
             "&:hover": {
                 backgroundColor: "#303F9F",
                 cursor: "default",
@@ -114,16 +115,16 @@ function Profile() {
                     <p className={classes.profil} > Hello! Thanks for checking my resume.
                     <br />I'm a self-taught programmer who started coding as a hobby.
                     <br />
-                        <br />I studied law at the University of Mons and then Brussel but then at some point, I decided to study programming on my own since it was more appealing. I'm always motivated to learn new languages and try new things.
+                        <br />I studied law at the University of Mons and then Brussel. I started studying programming in my spare time because it was really engaging and overall fits me a lot better. I'm always motivated to learn new languages and try new things.
                     <br />
                         <br /> 
-                    I'm fluent in French, English and Vietnamese. I can speak a little bit of Dutch and Japanese (however, I wouldn't mind improving my dutch if given the chance).
+                    I'm fluent in French, English and Vietnamese. I can speak a little bit of Dutch and Japanese (however, I wouldn't mind improving my Dutch if given the chance).
                     </p>
                     <div style={{ backgroundColor: "#50617d" }} className={classes.profile}>
                         <h3 style={{ fontWeight: "bold" }}>Education </h3>
                     </div>
                     <p className={classes.education}>
-                        2008 – 2014 : Secondary School, Mouscron<br />
+                        2008 – 2014 : Secondary School, Mouscron (Secondary Degree)<br />
 
                     2015 – 2018 : University of Mons (UMONS)<br />
 
