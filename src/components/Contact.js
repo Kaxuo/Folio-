@@ -113,8 +113,8 @@ function Contact() {
             <div className={classes.container}>
                 <h1 style={{ borderBottom: " 2px groove white", paddingBottom: "1%", fontFamily: 'Raleway', }}> Contact Me ! </h1>
                 <div style={{ fontFamily: 'Raleway', borderBottom: " 2px groove white", fontSize: "px" }}>
-                    <p> <PhoneAndroidIcon color="primary" />0486 72 95 96</p>
-                    <p> <DraftsIcon color="primary" /> Nguyen.Hoang0001@hotmail.com</p>
+                    <p> <PhoneAndroidIcon color="primary" />+32 486 72 95 96</p>
+                    <p> <DraftsIcon color="primary" /> Nguyen.Hoang7451@gmail.com</p>
                     <p> <ContactsIcon color="primary" /> Or you could submit the form below directly </p>
                 </div>
                 <div className={classes.form}>

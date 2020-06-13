@@ -46,13 +46,16 @@ function Profile() {
             textAlign: "justify",
             fontSize: "20px",
             [theme.breakpoints.down('md')]: {
-                flexDirection:"column",
+                flexDirection: "column",
                 alignItems: "center"
-              },
+            },
         },
-        break:{
-            [theme.breakpoints.down('md')]:{
-                padding:"3%"
+        break: {
+            paddingLeft:"20px",
+            paddingRight:"20px",
+            textAlign:"center",
+            [theme.breakpoints.down('md')]: {
+                padding: "3%",
             },
         },
         education: {
@@ -117,14 +120,14 @@ function Profile() {
                     <br />
                         <br />I studied law at the University of Mons and then Brussel. I started studying programming in my spare time because it was really engaging and overall fits me a lot better. I'm always motivated to learn new languages and try new things.
                     <br />
-                        <br /> 
+                        <br />
                     I'm fluent in French, English and Vietnamese. I can speak a little bit of Dutch and Japanese (however, I wouldn't mind improving my Dutch if given the chance).
                     </p>
                     <div style={{ backgroundColor: "#50617d" }} className={classes.profile}>
                         <h3 style={{ fontWeight: "bold" }}>Education </h3>
                     </div>
                     <p className={classes.education}>
-                        2008 – 2014 : Secondary School, Mouscron (Secondary Degree)<br />
+                    2008 – 2014 : Secondary School, Mouscron (Secondary Degree)<br />
 
                     2015 – 2018 : University of Mons (UMONS)<br />
 
@@ -132,30 +135,24 @@ function Profile() {
 
                     </p>
                     <div style={{ backgroundColor: "#50617d" }} className={classes.profile}>
-                        <h3 style={{ fontWeight: "bold" }}> Programming Skills </h3>
+                        <h3 style={{ fontWeight: "bold" }}> Programming skills </h3>
                     </div>
                     <Box display="flex" justifyContent="space-between" className={classes.skills}>
                         <Box className={classes.break}>
-                            <p style={{fontWeight:"bold",fontStyle:"italic"}}> Front-End Languages :</p>
-                            <ul>
-                                <li>HTML/CSS</li>
-                                <li>Javascript</li>
-                                <li>React(Redux)</li>
-                            </ul>
+                            <p style={{ fontWeight: "bold", fontStyle: "italic" }}> Front-End Languages</p>
+                            <div>HTML/CSS</div>
+                            <div>Javascript</div>
+                            <div>React(Redux)</div>
                         </Box>
                         <Box className={classes.break}>
-                            <p style={{fontWeight:"bold",fontStyle:"italic"}}> Back-End Languages :</p>
-                            <ul>
-                                <li>Python(Django)</li>
-                                <li>Node.js(Express.js)</li>
-                            </ul>
+                            <p style={{ fontWeight: "bold", fontStyle: "italic" }}> Back-End Languages</p>
+                            <div>Python(Django)</div>
+                            <div>Node.js(Express.js)</div>
                         </Box>
                         <Box className={classes.break}>
-                            <p style={{fontWeight:"bold",fontStyle:"italic"}}> Database Management :</p>
-                            <ul>
-                                <li>SQL(MySQL)</li>
-                                <li>noSQL(MongoDB)</li>
-                            </ul>
+                            <p style={{ fontWeight: "bold", fontStyle: "italic" }}> Database Management</p>
+                            <div>SQL(MySQL)</div>
+                            <div>noSQL(MongoDB)</div>
                         </Box>
                     </Box>
                     <div style={{ backgroundColor: "#50617d" }} className={classes.profile}>
