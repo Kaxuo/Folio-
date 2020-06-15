@@ -37,6 +37,7 @@ const useStyles = makeStyles((theme) => ({
   },
   view: {
       justifyContent: "center",
+      background:"linear-gradient(0deg,#8e9eab 0%,#eef2f3 100%)",
       
   },
   text: {
