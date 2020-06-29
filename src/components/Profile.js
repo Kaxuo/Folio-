@@ -14,11 +14,11 @@ function Profile() {
     const skills = [
         {
             "type": "HTML",
-            "level": 90
+            "level": 80
         },
         {
             "type": "CSS",
-            "level": 90
+            "level": 80
         },
         {
             "type": "Javascript",
@@ -30,11 +30,11 @@ function Profile() {
         },
         {
             "type": "Python",
-            "level": 50
+            "level": 30
         },
         {
             "type": "Django",
-            "level": 60
+            "level": 50
         },
         {
             "type": "MySQL",
