@@ -168,7 +168,7 @@ function Profile() {
                         <img className={classes.img} src={avatar} alt="ava" />
                         <h2 className={classes.subtitles}> About me  </h2>
                         <p className={classes.text}>Hello ! Thanks for checking my page, I'm a Web Developer who started coding on his own !
-                        <br /> <br />I studied law at the University of Mons and then Brussel. I started studying programming in my spare time because it was really engaging and overall fits me a lot better. I'm always motivated to learn new languages and try new things.<br />  <br />I'm fluent in French, English and Vietnamese. I can speak a little bit of Dutch and Japanese (however, I will be happy to improve my Dutch if given the chance) </p>
+                        <br /> <br />I studied law at the University of Mons and then Brussel. I started studying programming in my spare time because it was really engaging and overall fits me a lot better. I'm always motivated to learn new languages and try new things.<br />  <br />I'm fluent in French, English and Vietnamese. I can speak a little bit of Dutch  (however, I will be happy to improve it if given the chance) </p>
 
                         <h2 className={classes.subtitles}> Education </h2>
                         <p className={classes.text}>
