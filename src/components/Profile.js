@@ -29,6 +29,10 @@ function Profile() {
             "level": 80
         },
         {
+            "type": "Angular",
+            "level": 50
+        },
+        {
             "type": "Python",
             "level": 30
         },
@@ -204,7 +208,6 @@ function Profile() {
                             <ProgressBar className={classes.level} label="English" now={90} />
                             <ProgressBar className={classes.level} label="Vietnamese" now={90} />
                             <ProgressBar className={classes.level} label="Dutch" now={50} />
-                            <ProgressBar className={classes.level} label="Japanese" now={30} />
                         </Box>
                         <h2 className={classes.subtitles}> Programming skills </h2>
                         <Box className={classes.level2} display="flex" flexDirection="column" >

@@ -10,8 +10,10 @@ import Typography from '@material-ui/core/Typography';
 
 const useStyles = makeStyles((theme) => ({
   root: {
-    width: 345,
-    height: 600,
+    maxWidth: 345,
+    minWidth:345,
+    maxHeight: 600,
+    minHeight: 600,
     backgroundColor:"white",
     display:"inline-block",
     marginTop :"25px",
