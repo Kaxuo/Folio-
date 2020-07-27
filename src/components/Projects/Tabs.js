@@ -13,13 +13,13 @@ import phone from '../../logo/phone.png'
 import poke from '../../logo/poke.png'
 import blog from '../../logo/blog.png'
 import ToD from '../../logo/ToD.png'
-import react from '../../logo/react.png'
 import crud from '../../logo/crud.png'
 import covid from '../../logo/covid.png'
 import MERN from '../../logo/MERN.png'
 import budget from '../../logo/budget.png'
 import angulartodo from '../../logo/angulartodo.png'
 import angularpok from '../../logo/angularpok.png'
+import mean from '../../logo/mean.png'
 
 function TabPanel(props) {
     const { children, value, index, ...other } = props;
@@ -66,7 +66,7 @@ const useStyles = makeStyles((theme) => ({
         position: "absolute",
         [theme.breakpoints.down('sm')]: {
             width: "100%",
-            left:0
+            left: 0
         },
         [theme.breakpoints.up('sm')]: {
             width: "100%",
@@ -126,7 +126,7 @@ export default function FullWidthTabs() {
                 <TabPanel className={classes.cards} value={value} index={0} dir={theme.direction}>
                     <div >
                         <Cards title="Beach Resort" languages="React•ContextAPI•React Router" description="A simple Beach Resort, allowing you to check and filter the rooms available, click on a specific room to get more information about it" picture={beach} live="https://beach-resort-project-contentful.netlify.app/" code="https://github.com/Kaxuo/BeachResort" />
-                        <Cards title="Coronavirus Tracker" languages="React" description="App that tracks the numbers of cases/recovered/deaths of the coronavirus, sorted by. Data coming from https://covid19.mathdro.id/api" picture={covid} live="https://trackervirus2020.netlify.app/" code="https://github.com/Kaxuo/VirusData" />
+                        <Cards title="MEAN Stack" languages="Angular•MongoDB•ExpressJs•NodeJS" description="Learning how to put all the languages together. Please, don't hesitate to create an account. Each account have their own tasks/lists" picture={mean} live="https://meanstackfrontend.netlify.app/" code="https://github.com/Kaxuo/frontmean" />
                         <Cards title="Mock-Up Phone Store" languages="React•ContextAPI•React Router" description="Phone store where you can add items to a cart, delete/add more items to that cart and view a description of the items by clicking on it" picture={phone} live="https://happy-shaw-ee0b3d.netlify.app/" code="https://github.com/Kaxuo/Phone-Store" />
                         <Cards title="MERN Stack" languages="MongoDB•ExpressJs•React•NodeJS" description="A Simple Shopping App but with Authentication. Using the MERN Stack and animations. Please, Register to manage the database." picture={MERN} live="https://mernshoppinglistmern.herokuapp.com/" code="https://github.com/Kaxuo/mernstack" />
                     </div>
@@ -141,10 +141,10 @@ export default function FullWidthTabs() {
                 </TabPanel>
                 <TabPanel className={classes.cards} value={value} index={2} dir={theme.direction}>
                     <div>
-                        {/* <Cards title="Beach Resort" languages="React•ContextAPI•React Router" description="A simple Beach Resort, allowing you to check and filter the rooms available, click on a specific room to get more information about it" picture={beach} live="https://beach-resort-project-contentful.netlify.app/" code="https://github.com/Kaxuo/BeachResort" /> */}
+                        <Cards title="MEAN Stack" languages="Angular•MongoDB•ExpressJs•NodeJS" description="Learning how to put all the languages together. Please, don't hesitate to create an account. Each account have their own tasks/lists" picture={mean} live="https://meanstackfrontend.netlify.app/" code="https://github.com/Kaxuo/frontmean" />
                         <Cards title="Pokedex" languages="Angular" description="Simple Pokedex ! You need to authenticate to be able to see it (ID and password are both 'admin'). Learning how to use Angular" picture={angularpok} live="https://pokemondata.netlify.app" code="https://github.com/Kaxuo/angularfirstproject" />
                         <Cards title="Budget Calculator" languages="Angular•SCSS " description="A simple Budget Calculator. After creating items, it's possible to edit them by clicking on them. A modal will appear allowing you to modify it" picture={budget} live="https://angularbudget.netlify.app/" code="https://github.com/Kaxuo/angularBudgetCalculator" />
-                        <Cards title="Coronavirus Tracker" languages="Angular" description="Simple to do app, first project in Angular allowing me to get the hang of it. Learning how to display data/create/delete. Possibility to check/uncheck items " picture={angulartodo} live="https://todoangulartest.netlify.app/" code="https://github.com/Kaxuo/angulartodo" />
+                        <Cards title="Angular Todo" languages="Angular" description="Simple to do app, first project in Angular allowing me to get the hang of it. Learning how to display data/create/delete. Possibility to check/uncheck items " picture={angulartodo} live="https://todoangulartest.netlify.app/" code="https://github.com/Kaxuo/angulartodo" />
                     </div>
                 </TabPanel>
                 <TabPanel className={classes.cards} value={value} index={3} dir={theme.direction}>
@@ -152,9 +152,9 @@ export default function FullWidthTabs() {
                     <Cards title="To Do App" languages="Python•Django" description="Simple ToDo app linked to the backend with oblivious features such as 'Add Task, Delete Task, Delete Completed Task' and so on " picture={ToD} live="https://todospeacefulwave-72.herokuapp.com/" code="https://github.com/Kaxuo/TodoApp" />
                 </TabPanel>
                 <TabPanel className={classes.cards} value={value} index={4} dir={theme.direction}>
+                    <Cards title="MEAN Stack" languages="Angular•MongoDB•ExpressJs•NodeJS" description="Learning how to put all the languages together. Please, don't hesitate to create an account. Each account have their own tasks/lists" picture={mean} live="https://meanstackfrontend.netlify.app/" code="https://github.com/Kaxuo/frontmean" />
                     <Cards title="MERN Stack" languages="MongoDB•ExpressJs•React•NodeJS" description="A Simple Shopping App but with Authentication. Using the MERN Stack and animations. Please, Register to manage the database." picture={MERN} live="https://mernshoppinglistmern.herokuapp.com/" code="https://github.com/Kaxuo/mernstack" />
                     <Cards title="Authentication App" languages="React•Redux•Django•MySQL" description="Authentication(Token) App(With ToDo App inside), Register or Log in to add your own Tasks. Mainly used to learn how to display user's data" picture={crud} live="https://todocrud000000.herokuapp.com/" code="https://github.com/Kaxuo/todocrud" />
-                    <Cards title="To Do App" languages="React•Django•MySQL" description="Another To Do App but with React as the front end and Django as the backend. Just learning how to put those two frameworks together and make them work" picture={react} live="https://guarded-shore-23074.herokuapp.com/" code="https://github.com/Kaxuo/ReactDjangoTodo" />
                 </TabPanel>
             </SwipeableViews>
         </div>
