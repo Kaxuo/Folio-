@@ -97,7 +97,7 @@ function Hero(props) {
                 <motion.div initial={{ opacity: 0 }} animate={{ opacity: 1 }} transition={{ duration: 3 }}>
                     <div className={classes.hero}>
                         <motion.h1 initial={{ y: 500 }} animate={{ y: 0 }} transition={{ duration: 1 }} className={classes.title}> Nguyen Hoang</motion.h1>
-                        <motion.h2 initial={{ y: 500 }} animate={{ y: 0 }} transition={{ duration: 1 }} className={classes.stack}> Full Stack Developper</motion.h2>
+                        <motion.h2 initial={{ y: 500 }} animate={{ y: 0 }} transition={{ duration: 1 }} className={classes.stack}> Full Stack Developer</motion.h2>
                         <motion.div initial={{ y: 500 }} animate={{ y: 0 }} transition={{ duration: 2 }}>
                             <Button onClick={() => props.scrollProjects()} className={classes.view} color="primary">
                                 View My Projects

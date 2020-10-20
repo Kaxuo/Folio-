@@ -110,7 +110,7 @@ function Profile() {
                 <div className={classes.container}>
                     <div className={classes.title}>
                         <h3 style={{ fontWeight: "bold" }}> Nguyen Hoang</h3>
-                        <h4 style={{ fontFamily: 'Raleway' }}> Full Stack Developper</h4>
+                        <h4 style={{ fontFamily: 'Raleway' }}> Full Stack Developer</h4>
                     </div>
                     <div className={classes.profile}>
                         <h3 style={{ fontWeight: "bold" }}>Profile </h3>
